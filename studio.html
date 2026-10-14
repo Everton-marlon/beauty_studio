@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thays Carneiro | beauty studio & Estética Facial</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            pinkLight: '#FDF0F4',
+                            pinkSoft: '#F8E1E7',
+                            pinkMedium: '#E8A5B8',
+                            pinkDark: '#C9738A',
+                            bluishWhite: '#F4F7F9',
+                            bluishSoft: '#E6EEF3',
+                            slateAccent: '#819BB0',
+                            charcoal: '#2D3748',
+                            goldAccent: '#D4AF37',
+                            roseGold: '#D49887'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/studio.css">
+</head>
+<body class="bg-[#FCFCFD] text-brand-charcoal font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation Header -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-3.5 bg-white/90 backdrop-blur-md border-b border-brand-pinkSoft/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <!-- Brand Logo (TC Monogram + Typography matching the picture) -->
+            <a href="#" class="flex items-center space-x-3.5 group">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#E2B2A3] via-brand-roseGold to-brand-pinkDark p-0.5 shadow-sm group-hover:scale-105 transition-transform shrink-0">
+                    <div class="w-full h-full bg-white rounded-full flex items-center justify-center p-1.5">
+                        <svg viewBox="0 0 100 100" class="w-full h-full text-brand-pinkDark" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 32 C25 18, 52 18, 68 24 C78 28, 86 20, 78 12 C68 5, 48 10, 35 22 C18 38, 12 62, 28 78 C42 92, 72 86, 82 68 C88 58, 76 46, 62 52 C48 58, 38 72, 54 82 C68 92, 88 74, 84 48 C80 26, 58 26, 42 40 L32 80 C30 87, 26 92, 20 90"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-sans font-semibold text-base sm:text-lg tracking-[0.22em] text-gray-800 leading-none uppercase">THAYS CARNEIRO</span>
+                    <span class="font-sans font-normal text-[10px] sm:text-[11px] tracking-[0.28em] text-brand-roseGold leading-tight lowercase mt-0.5">beauty studio</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex space-x-8 items-center font-medium text-sm text-gray-600">
+                <a href="gestao.html" class="hover:text-brand-pinkDark transition-colors flex items-center gap-1"><i class="fa-solid fa-chart-line text-xs"></i> Gestão</a>
+                <a href="#sobre" class="hover:text-brand-pinkDark transition-colors">Sobre</a>
+                <a href="#servicos" class="hover:text-brand-pinkDark transition-colors">Tratamentos</a>
+                <a href="#planos" class="hover:text-brand-pinkDark transition-colors">Clube de Assinatura</a>
+                <a href="#precos" class="hover:text-brand-pinkDark transition-colors">Preços & Pacotes</a>
+                <a href="#cursos" class="hover:text-brand-pinkDark transition-colors text-brand-pinkDark font-medium">Cursos</a>
+                <a href="#quiz" class="hover:text-brand-pinkDark transition-colors flex items-center gap-1 text-brand-pinkDark font-semibold">
+                    <i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Diagnóstico IA
+                </a>
+                <a href="#depoimentos" class="hover:text-brand-pinkDark transition-colors">Depoimentos</a>
+                <a href="#contato" class="hover:text-brand-pinkDark transition-colors">Contato</a>
+            </nav>
+
+            <!-- CTA Button Desktop -->
+            <div class="hidden md:flex items-center gap-3">
+                <a href="portal-cliente.html" class="bg-brand-pinkLight border border-brand-pinkMedium/50 text-brand-pinkDark hover:bg-brand-pinkSoft px-4 py-2.5 rounded-full text-xs font-semibold transition-all flex items-center gap-2 shadow-sm">
+                    <i class="fa-solid fa-user-lock text-brand-pinkDark"></i> Portal do Cliente
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 hover:text-brand-pinkDark focus:outline-none p-2" aria-label="Abrir Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 border-b border-brand-pinkSoft px-4 pt-4 pb-6 space-y-4">
+            <a href="gestao.html" class="block py-2 text-gray-700 hover:text-brand-pinkDark"><i class="fa-solid fa-chart-line mr-2"></i>Gestão</a>
+            <a href="#sobre" onclick="toggleMenu()" class="block py-2 text-gray-700 hover:text-brand-pinkDark">Sobre</a>
+            <a href="#servicos" onclick="toggleMenu()" class="block py-2 text-gray-700 hover:text-brand-pinkDark">Tratamentos</a>
+            <a href="#planos" onclick="toggleMenu()" class="block py-2 text-gray-700 hover:text-brand-pinkDark">Clube de Assinatura</a>
+            <a href="#precos" onclick="toggleMenu()" class="block py-2 text-gray-700 hover:text-brand-pinkDark">Preços & Pacotes</a>
+            <a href="#cursos" onclick="toggleMenu()" class="block py-2 text-brand-pinkDark font-semibold">Cursos Profissionais</a>
+            <a href="#quiz" onclick="toggleMenu()" class="block py-2 text-brand-pinkDark font-semibold">Diagnóstico IA Personalizado</a>
+            <a href="portal-cliente.html" class="w-full bg-brand-pinkLight text-brand-pinkDark py-2.5 rounded-full font-semibold border border-brand-pinkMedium/40 flex items-center justify-center gap-2 text-sm">
+                <i class="fa-solid fa-user-lock"></i> Portal do Cliente
+            </a>
+            <a href="#depoimentos" onclick="toggleMenu()" class="block py-2 text-gray-700 hover:text-brand-pinkDark">Depoimentos</a>
+            <a href="#contato" onclick="toggleMenu()" class="block py-2 text-gray-700 hover:text-brand-pinkDark">Contato</a>
+            <button onclick="toggleMenu(); openModal();" class="w-full bg-brand-pinkDark text-white py-3 rounded-full text-center font-semibold shadow-md">
+                Pré-Agendamento
+            </button>
+        </div>
+    </header>
+
+    <div class="flex justify-center pt-32 mb-8">
+        <a href="ficha-anamnese.html" class="inline-flex items-center gap-2 rounded-full bg-brand-pinkDark px-5 py-3 text-xs font-semibold text-white shadow-md transition hover:opacity-90"><i class="fa-solid fa-clipboard-list"></i>Ficha de anamnese</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 lg:pt-40 lg:pb-32 hero-gradient relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-white/80 px-4 py-1.5 rounded-full border border-brand-pinkSoft text-brand-pinkDark text-xs uppercase tracking-widest font-semibold shadow-sm">
+                        <i class="fa-solid fa-sparkles text-xs"></i>
+                        <span>Clínica de Estética Facial de Alta Performance</span>
+                    </div>
+                    
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight leading-tight text-brand-charcoal">
+                        Realce sua beleza natural com cuidados <span class="italic font-serif text-brand-pinkDark">exclusivos e personalizados.</span>
+                    </h1>
+                    
+                    <p class="text-gray-600 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Protocolos avançados de rejuvenescimento, limpeza profunda e harmonização suave em um ambiente sofisticado projetado para o seu bem-estar completo.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="openModal()" class="bg-brand-pinkDark hover:bg-opacity-90 text-white px-8 py-4 rounded-full font-medium shadow-lg hover:shadow-xl transition-all text-center flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-calendar-check"></i>
+                            <span>Fazer Pré-Agendamento</span>
+                        </button>
+                        <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta%20no%20Thays%20Carneiro%20Beauty%20Studio." target="_blank" class="bg-white hover:bg-brand-bluishWhite text-brand-charcoal border border-brand-pinkSoft px-8 py-4 rounded-full font-medium shadow-sm hover:shadow-md transition-all flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-green-500 text-xl"></i>
+                            <span>Agendar via WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust indicators -->
+                    <div class="pt-8 border-t border-brand-pinkMedium/20 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <span class="block font-serif text-2xl lg:text-3xl font-semibold text-brand-pinkDark">+2.500</span>
+                            <span class="text-xs text-gray-500">Peles Transformadas</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl lg:text-3xl font-semibold text-brand-slateAccent">100%</span>
+                            <span class="text-xs text-gray-500">Personalizado</span>
+                        </div>
+                        <div>
+                            <span class="block font-serif text-2xl lg:text-3xl font-semibold text-brand-pinkDark">4.9 ★</span>
+                            <span class="text-xs text-gray-500">Avaliação das Clientes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -top-6 -left-6 w-72 h-72 bg-brand-pinkMedium/30 rounded-full blur-3xl"></div>
+                        <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-brand-bluishSoft/60 rounded-full blur-3xl"></div>
+                        
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" alt="Tratamento Estético Facial Thays Carneiro" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                            
+                            <div class="absolute top-6 left-6 glass-card p-3 rounded-2xl shadow-lg flex items-center space-x-3 max-w-[200px]">
+                                <div class="w-10 h-10 rounded-xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark shrink-0">
+                                    <i class="fa-solid fa-microscope text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-gray-800">Tecnologia</p>
+                                    <p class="text-[10px] text-gray-500">Dermocosmética</p>
+                                </div>
+                            </div>
+
+                            <div class="absolute bottom-6 right-6 glass-card p-3.5 rounded-2xl shadow-lg flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-xl bg-brand-bluishSoft flex items-center justify-center text-brand-slateAccent shrink-0">
+                                    <i class="fa-solid fa-heart-pulse text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-gray-800">Avaliação Gratuita</p>
+                                    <p class="text-[10px] text-gray-500">Mapeamento Facial</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <div class="relative order-2 lg:order-1">
+                    <div class="rounded-3xl overflow-hidden shadow-xl border-8 border-brand-pinkLight relative">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80" alt="Thays Carneiro Especialista em Estética Facial" class="w-full h-[500px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 text-white">
+                            <span class="text-xs uppercase tracking-[0.25em] text-brand-pinkSoft block font-medium">THAYS CARNEIRO</span>
+                            <span class="text-[11px] tracking-[0.2em] text-gray-200 block lowercase font-light">beauty studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 order-1 lg:order-2">
+                    <div class="inline-block px-3 py-1 bg-brand-bluishSoft text-brand-slateAccent text-xs font-semibold uppercase tracking-wider rounded-full">
+                        Sua Especialista
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-charcoal">
+                        Ciência, sensibilidade e paixão por cuidar da sua pele.
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Com anos de dedicação no segmento de estética facial avançada, Thays Carneiro desenvolveu um método exclusivo de diagnóstico e tratamento que prioriza a saúde da barreira cutânea e a naturalidade dos resultados.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Cada protocolo é concebido sob medida para atender às necessidades únicas da sua pele, unindo as mais modernas técnicas do mercado internacional a um ambiente acolhedor e relaxante.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                        <div class="p-4 rounded-2xl bg-brand-pinkLight/50 border border-brand-pinkSoft/60 text-center">
+                            <i class="fa-solid fa-magnifying-glass-chart text-2xl text-brand-pinkDark mb-2"></i>
+                            <h3 class="font-semibold text-sm text-brand-charcoal">Análise de Pele</h3>
+                            <p class="text-[11px] text-gray-500 mt-1">Diagnóstico dérmico completo</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-brand-bluishWhite border border-brand-bluishSoft text-center">
+                            <i class="fa-solid fa-microchip text-2xl text-brand-slateAccent mb-2"></i>
+                            <h3 class="font-semibold text-sm text-brand-charcoal">Tecnologia</h3>
+                            <p class="text-[11px] text-gray-500 mt-1">Equipamentos de ponta</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-brand-pinkLight/50 border border-brand-pinkSoft/60 text-center">
+                            <i class="fa-solid fa-bottle-droplet text-2xl text-brand-pinkDark mb-2"></i>
+                            <h3 class="font-semibold text-sm text-brand-charcoal">Dermocosméticos</h3>
+                            <p class="text-[11px] text-gray-500 mt-1">Ativos de alta pureza</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-20 bg-brand-bluishWhite/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-pinkDark font-semibold text-xs uppercase tracking-widest">Tratamentos Exclusivos</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal text-brand-charcoal mt-2">
+                    Menu de Serviços Faciais
+                </h2>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">
+                    Selecione um tratamento para visualizar detalhes ou faça um pré-agendamento direto.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-pinkSoft/40 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-spa"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-slateAccent uppercase tracking-wider">Essencial & Renovação</span>
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mt-1 mb-3">Limpeza de Pele Profunda</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Remoção de impurezas e cravos com emoliência suave, peeling ultrassônico, alta frequência e máscara calmante hidroplástica.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <button onclick="openServiceDetail('limpeza')" class="text-xs font-semibold text-brand-slateAccent hover:text-brand-pinkDark flex items-center gap-1 transition-colors">
+                            <span>Ver Detalhes</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                        <button onclick="openModalWithService('Limpeza de Pele Profunda')" class="bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark px-4 py-2 rounded-full text-xs font-semibold transition-colors">
+                            Pré-Agendar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-pinkSoft/40 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bluishSoft flex items-center justify-center text-brand-slateAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-pinkDark uppercase tracking-wider">Clareamento & Tom</span>
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mt-1 mb-3">Peeling Químico Otimizado</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Renovação celular para tratamento de manchas, melasma, poros dilatados e linhas finas através de um blend de ácidos suaves.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <button onclick="openServiceDetail('peeling')" class="text-xs font-semibold text-brand-slateAccent hover:text-brand-pinkDark flex items-center gap-1 transition-colors">
+                            <span>Ver Detalhes</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                        <button onclick="openModalWithService('Peeling Químico Otimizado')" class="bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark px-4 py-2 rounded-full text-xs font-semibold transition-colors">
+                            Pré-Agendar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-pinkSoft/40 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-syringe"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-slateAccent uppercase tracking-wider">Colágeno & Firmeza</span>
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mt-1 mb-3">Microagulhamento & Drug Delivery</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Indução percutânea de colágeno acompanhada da aplicação de ativos estéreis concentrados para rejuvenescimento profundo.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <button onclick="openServiceDetail('microagulhamento')" class="text-xs font-semibold text-brand-slateAccent hover:text-brand-pinkDark flex items-center gap-1 transition-colors">
+                            <span>Ver Detalhes</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                        <button onclick="openModalWithService('Microagulhamento & Drug Delivery')" class="bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark px-4 py-2 rounded-full text-xs font-semibold transition-colors">
+                            Pré-Agendar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-pinkSoft/40 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bluishSoft flex items-center justify-center text-brand-slateAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-pinkDark uppercase tracking-wider">Contorno & Volume</span>
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mt-1 mb-3">Harmonização Suave & Preenchimento</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Técnica delicada de aplicação de ácido hialurônico para devolução de contornos e volume natural com elegância.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <button onclick="openServiceDetail('harmonizacao')" class="text-xs font-semibold text-brand-slateAccent hover:text-brand-pinkDark flex items-center gap-1 transition-colors">
+                            <span>Ver Detalhes</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                        <button onclick="openModalWithService('Harmonização Suave')" class="bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark px-4 py-2 rounded-full text-xs font-semibold transition-colors">
+                            Pré-Agendar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-pinkSoft/40 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-slateAccent uppercase tracking-wider">Lifting Manual</span>
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mt-1 mb-3">Drenagem & Massagem Sculpt</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Manobras desintoxicantes e modeladoras que desincham a face, definem o maxilar e proporcionam um efeito lifting imediato.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <button onclick="openServiceDetail('massagem')" class="text-xs font-semibold text-brand-slateAccent hover:text-brand-pinkDark flex items-center gap-1 transition-colors">
+                            <span>Ver Detalhes</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                        <button onclick="openModalWithService('Drenagem & Massagem Sculpt')" class="bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark px-4 py-2 rounded-full text-xs font-semibold transition-colors">
+                            Pré-Agendar
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-brand-pinkSoft/40 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-brand-bluishSoft flex items-center justify-center text-brand-slateAccent text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-brand-pinkDark uppercase tracking-wider">Olhar & Moldura</span>
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mt-1 mb-3">Brow Lamination & Lash Lifting</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                            Alinhamento e curvatura dos fios naturais de sobrancelhas e cílios com hidratação e pigmentação de longa duração.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                        <button onclick="openServiceDetail('cilios')" class="text-xs font-semibold text-brand-slateAccent hover:text-brand-pinkDark flex items-center gap-1 transition-colors">
+                            <span>Ver Detalhes</span> <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </button>
+                        <button onclick="openModalWithService('Brow Lamination & Lash Lifting')" class="bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark px-4 py-2 rounded-full text-xs font-semibold transition-colors">
+                            Pré-Agendar
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hair & Lashes Section -->
+    <section id="hair-lashes" class="py-20 bg-brand-pinkLight/35 relative overflow-hidden">
+        <div class="absolute -top-28 -right-20 w-80 h-80 bg-brand-pinkMedium/20 rounded-full blur-3xl"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+                <div class="relative">
+                    <div class="absolute -left-5 -bottom-5 w-full h-full rounded-3xl bg-brand-bluishSoft/70"></div>
+                    <div class="relative rounded-3xl overflow-hidden border-8 border-white shadow-xl bg-white">
+                        <img src="assets/images/mega-hair-extensao-cilios.png" alt="Mega hair e extensão de cílios com acabamento natural" class="w-full h-[520px] object-cover">
+                        <div class="absolute bottom-5 left-5 right-5 glass-card rounded-2xl p-4 flex items-center gap-3">
+                            <div class="w-11 h-11 rounded-xl bg-brand-pinkLight text-brand-pinkDark grid place-items-center shrink-0"><i class="fa-solid fa-gem text-lg"></i></div>
+                            <div><p class="text-xs font-semibold text-brand-charcoal">Beleza com naturalidade</p><p class="text-[11px] text-gray-500 mt-0.5">Curadoria, aplicação e acabamento personalizado.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <span class="inline-flex items-center gap-2 bg-white text-brand-pinkDark border border-brand-pinkSoft px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-widest shadow-sm"><i class="fa-solid fa-sparkles"></i> Hair & Lashes</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-normal text-brand-charcoal mt-4">Extensões que valorizam a sua beleza em cada detalhe.</h2>
+                    <p class="text-gray-600 leading-relaxed mt-4">Do volume e movimento do mega hair ao olhar marcante da extensão de cílios, oferecemos soluções personalizadas para um resultado sofisticado, confortável e fiel ao seu estilo.</p>
+
+                    <div class="mt-7 space-y-4">
+                        <article class="bg-white/90 rounded-2xl p-5 border border-brand-pinkSoft/70 shadow-sm flex gap-4"><span class="w-11 h-11 shrink-0 rounded-xl bg-brand-pinkLight text-brand-pinkDark grid place-items-center"><i class="fa-solid fa-scissors"></i></span><div><h3 class="font-serif text-xl font-semibold text-brand-charcoal">Mega Hair</h3><p class="text-xs text-gray-600 leading-relaxed mt-1">Aplicação personalizada para comprimento, volume e movimento, com orientação para que o acabamento fique natural e harmônico.</p></div></article>
+                        <article class="bg-white/90 rounded-2xl p-5 border border-brand-pinkSoft/70 shadow-sm flex gap-4"><span class="w-11 h-11 shrink-0 rounded-xl bg-brand-bluishSoft text-brand-slateAccent grid place-items-center"><i class="fa-solid fa-hand-holding-heart"></i></span><div><h3 class="font-serif text-xl font-semibold text-brand-charcoal">Compra de Cabelo</h3><p class="text-xs text-gray-600 leading-relaxed mt-1">Faça uma avaliação do seu cabelo para venda. Analisamos comprimento, estado dos fios e procedência com atendimento discreto e transparente.</p></div></article>
+                        <article class="bg-white/90 rounded-2xl p-5 border border-brand-pinkSoft/70 shadow-sm flex gap-4"><span class="w-11 h-11 shrink-0 rounded-xl bg-brand-pinkLight text-brand-pinkDark grid place-items-center"><i class="fa-solid fa-eye"></i></span><div><h3 class="font-serif text-xl font-semibold text-brand-charcoal">Extensão de Cílios</h3><p class="text-xs text-gray-600 leading-relaxed mt-1">Técnicas delicadas para destacar o olhar com curvatura, volume e efeito sob medida, respeitando seus fios naturais.</p></div></article>
+                    </div>
+
+                    <a href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20mega%20hair%2C%20compra%20de%20cabelo%20ou%20extensão%20de%20cílios." target="_blank" class="mt-7 inline-flex items-center justify-center gap-2 bg-brand-pinkDark hover:bg-opacity-90 text-white px-6 py-3.5 rounded-full text-xs font-semibold shadow-md transition-all"><i class="fa-brands fa-whatsapp text-base"></i>Falar com a equipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos de Assinatura Mensal (Clube de Beleza Facial) -->
+    <section id="planos" class="py-20 bg-white relative border-t border-brand-pinkSoft/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-brand-pinkLight text-brand-pinkDark font-semibold text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full inline-block border border-brand-pinkSoft">
+                    <i class="fa-solid fa-crown text-amber-500 mr-1"></i> Clube de Assinatura Mensal
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal text-brand-charcoal mt-3">
+                    Sua rotina de autocuidado em dia, todo mês
+                </h2>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">
+                    Torne-se uma cliente VIP com nossos planos mensais recorrentes. Garanta prioridade na agenda, descontos exclusivos e acompanhamento contínuo da sua pele.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Plano Essential -->
+                <div class="bg-brand-bluishWhite/40 rounded-3xl p-8 border border-brand-bluishSoft flex flex-col justify-between hover:shadow-lg transition-all relative">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold text-brand-slateAccent uppercase tracking-wider">Iniciante / Manutenção</span>
+                            <span class="bg-brand-bluishSoft text-brand-slateAccent text-[10px] font-bold px-2.5 py-1 rounded-full">Glow Essential</span>
+                        </div>
+                        <div class="mb-6">
+                            <span class="font-serif text-4xl font-bold text-brand-charcoal">R$ 189</span>
+                            <span class="text-gray-500 text-xs">/ mês</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-gray-600 mb-8 border-t border-gray-200/60 pt-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span><strong>1 Limpeza de Pele Profunda</strong> ou Peeling por mês</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span><strong>10% de desconto</strong> em produtos de home care</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span>Hidratação hidroplástica cortesia</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span>Lembrete e reagendamento flexível</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="subscribePlan('Plano Glow Essential', '189')" class="w-full bg-white hover:bg-brand-bluishSoft text-brand-charcoal border border-brand-slateAccent/40 py-3 rounded-full text-xs font-semibold transition-all shadow-sm">
+                        Assinar Plano Essential
+                    </button>
+                </div>
+
+                <!-- Plano Prime Radiance (Destaque) -->
+                <div class="bg-gradient-to-b from-brand-pinkLight via-white to-brand-pinkLight/30 rounded-3xl p-8 border-2 border-brand-pinkMedium shadow-xl flex flex-col justify-between relative transform md:-translate-y-2">
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-pinkDark text-white text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-full shadow-md">
+                        Mais Vendido VIP
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-4 pt-2">
+                            <span class="text-xs font-semibold text-brand-pinkDark uppercase tracking-wider">Tratamento Intensivo</span>
+                            <span class="bg-brand-pinkMedium/30 text-brand-pinkDark text-[10px] font-bold px-2.5 py-1 rounded-full">Prime Radiance</span>
+                        </div>
+                        <div class="mb-6">
+                            <span class="font-serif text-4xl font-bold text-brand-charcoal">R$ 320</span>
+                            <span class="text-gray-500 text-xs">/ mês</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-gray-700 mb-8 border-t border-brand-pinkSoft pt-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-pinkDark"></i>
+                                <span><strong>2 Tratamentos Faciais/mês</strong> (Limpeza + Peeling ou Massagem)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-pinkDark"></i>
+                                <span><strong>15% de desconto</strong> em procedimentos adicionais</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-pinkDark"></i>
+                                <span>Mapeamento mensal da evolução da pele com IA</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-pinkDark"></i>
+                                <span>Kit de amostras de dermocosméticos na adesão</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-brand-pinkDark"></i>
+                                <span>Atendimento prioritário aos sábados</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="subscribePlan('Plano Prime Radiance', '320')" class="w-full bg-brand-pinkDark hover:bg-opacity-90 text-white py-3.5 rounded-full text-xs font-semibold shadow-md transition-all">
+                        Quero Ser Assinante Prime
+                    </button>
+                </div>
+
+                <!-- Plano Diamond VIP -->
+                <div class="bg-brand-bluishWhite/40 rounded-3xl p-8 border border-brand-bluishSoft flex flex-col justify-between hover:shadow-lg transition-all relative">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold text-brand-charcoal uppercase tracking-wider">Alta Performance</span>
+                            <span class="bg-gray-800 text-amber-300 text-[10px] font-bold px-2.5 py-1 rounded-full">Diamond VIP</span>
+                        </div>
+                        <div class="mb-6">
+                            <span class="font-serif text-4xl font-bold text-brand-charcoal">R$ 540</span>
+                            <span class="text-gray-500 text-xs">/ mês</span>
+                        </div>
+                        <ul class="space-y-3 text-xs text-gray-600 mb-8 border-t border-gray-200/60 pt-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span><strong>3 Sessões/mês</strong> (Incluso Microagulhamento ou Laser)</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span><strong>20% de desconto</strong> em todos os serviços e produtos</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span>Sessão de Lash Lifting ou Brow Lamination trimestral</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fa-solid fa-check text-green-500"></i>
+                                <span>Acompanhamento direto pelo WhatsApp</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <button onclick="subscribePlan('Plano Diamond VIP', '540')" class="w-full bg-brand-charcoal hover:bg-black text-white py-3 rounded-full text-xs font-semibold transition-all shadow-sm">
+                        Assinar Plano Diamond
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela de Preços e Pacotes de Serviços (Para Clientes Não-Assinantes) -->
+    <section id="precos" class="py-20 bg-brand-bluishWhite/60 border-t border-brand-pinkSoft/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-slateAccent font-semibold text-xs uppercase tracking-widest">Tabela Transparente de Preços</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal text-brand-charcoal mt-2">
+                    Sessões Avulsas & Pacotes Economia
+                </h2>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">
+                    Não é assinante? Escolha realizar uma sessão avulsa ou aproveite o desconto especial dos nossos pacotes combinados de tratamento.
+                </p>
+
+                <!-- Toggle Switcher Avulso vs Pacote -->
+                <div class="flex justify-center mt-6 bg-white p-1 rounded-full max-w-xs mx-auto border border-gray-200 shadow-sm">
+                    <button id="price-tab-all" onclick="filterPricing('all')" class="flex-1 py-2 px-3 rounded-full text-xs font-semibold bg-brand-pinkDark text-white shadow-sm transition-all">
+                        Todos os Valores
+                    </button>
+                    <button id="price-tab-combos" onclick="filterPricing('combos')" class="flex-1 py-2 px-3 rounded-full text-xs font-semibold text-gray-600 hover:text-brand-charcoal transition-all">
+                        Só Pacotes (Desconto)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pricing Grid Table -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Pricing Card 1 -->
+                <div class="price-card bg-white p-6 rounded-3xl border border-brand-pinkSoft/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Limpeza de Pele Profunda</h3>
+                            <span class="text-[10px] bg-brand-pinkLight text-brand-pinkDark font-semibold px-2.5 py-0.5 rounded-full">75 min</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Higienização com vapor de ozônio, extração e máscara hidroplástica.</p>
+                        
+                        <div class="space-y-2 border-t border-gray-100 pt-4 mb-6 text-xs">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Sessão Avulsa:</span>
+                                <span class="font-bold text-brand-charcoal text-sm">R$ 150,00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-50 p-2 rounded-xl border border-green-100">
+                                <span class="text-green-800 font-medium">Pacote com 3 Sessões:</span>
+                                <div>
+                                    <span class="font-bold text-green-700 text-sm">R$ 380,00</span>
+                                    <span class="block text-[9px] text-green-600 text-right">Economize R$ 70</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModalWithService('Limpeza de Pele Profunda')" class="w-full bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark py-2.5 rounded-xl text-xs font-semibold transition-colors">
+                        Agendar Sessão ou Pacote
+                    </button>
+                </div>
+
+                <!-- Pricing Card 2 -->
+                <div class="price-card bg-white p-6 rounded-3xl border border-brand-pinkSoft/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Peeling Químico Otimizado</h3>
+                            <span class="text-[10px] bg-brand-bluishSoft text-brand-slateAccent font-semibold px-2.5 py-0.5 rounded-full">50 min</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Renovação celular para manchas, melasma e viço cutâneo.</p>
+                        
+                        <div class="space-y-2 border-t border-gray-100 pt-4 mb-6 text-xs">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Sessão Avulsa:</span>
+                                <span class="font-bold text-brand-charcoal text-sm">R$ 220,00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-50 p-2 rounded-xl border border-green-100">
+                                <span class="text-green-800 font-medium">Pacote com 3 Sessões:</span>
+                                <div>
+                                    <span class="font-bold text-green-700 text-sm">R$ 560,00</span>
+                                    <span class="block text-[9px] text-green-600 text-right">Economize R$ 100</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModalWithService('Peeling Químico Otimizado')" class="w-full bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark py-2.5 rounded-xl text-xs font-semibold transition-colors">
+                        Agendar Sessão ou Pacote
+                    </button>
+                </div>
+
+                <!-- Pricing Card 3 -->
+                <div class="price-card bg-white p-6 rounded-3xl border border-brand-pinkSoft/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Microagulhamento & Drug Delivery</h3>
+                            <span class="text-[10px] bg-brand-pinkLight text-brand-pinkDark font-semibold px-2.5 py-0.5 rounded-full">60 min</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Indução percutânea de colágeno com infusão de séruns concentrados.</p>
+                        
+                        <div class="space-y-2 border-t border-gray-100 pt-4 mb-6 text-xs">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Sessão Avulsa:</span>
+                                <span class="font-bold text-brand-charcoal text-sm">R$ 350,00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-50 p-2 rounded-xl border border-green-100">
+                                <span class="text-green-800 font-medium">Pacote com 3 Sessões:</span>
+                                <div>
+                                    <span class="font-bold text-green-700 text-sm">R$ 890,00</span>
+                                    <span class="block text-[9px] text-green-600 text-right">Economize R$ 160</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModalWithService('Microagulhamento & Drug Delivery')" class="w-full bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark py-2.5 rounded-xl text-xs font-semibold transition-colors">
+                        Agendar Sessão ou Pacote
+                    </button>
+                </div>
+
+                <!-- Pricing Card 4 -->
+                <div class="price-card bg-white p-6 rounded-3xl border border-brand-pinkSoft/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Drenagem & Massagem Sculpt</h3>
+                            <span class="text-[10px] bg-brand-bluishSoft text-brand-slateAccent font-semibold px-2.5 py-0.5 rounded-full">45 min</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Manobras de drenagem e efeito lifting com esferas geladas.</p>
+                        
+                        <div class="space-y-2 border-t border-gray-100 pt-4 mb-6 text-xs">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Sessão Avulsa:</span>
+                                <span class="font-bold text-brand-charcoal text-sm">R$ 130,00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-50 p-2 rounded-xl border border-green-100">
+                                <span class="text-green-800 font-medium">Pacote Leve 5 Pague 4:</span>
+                                <div>
+                                    <span class="font-bold text-green-700 text-sm">R$ 520,00</span>
+                                    <span class="block text-[9px] text-green-600 text-right">1 Sessão Grátis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModalWithService('Drenagem & Massagem Sculpt')" class="w-full bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark py-2.5 rounded-xl text-xs font-semibold transition-colors">
+                        Agendar Sessão ou Pacote
+                    </button>
+                </div>
+
+                <!-- Pricing Card 5 -->
+                <div class="price-card bg-white p-6 rounded-3xl border border-brand-pinkSoft/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Brow Lamination & Lash Lifting</h3>
+                            <span class="text-[10px] bg-brand-pinkLight text-brand-pinkDark font-semibold px-2.5 py-0.5 rounded-full">60 min</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Alinhamento, curvatura e hidratação dos fios de sobrancelhas e cílios.</p>
+                        
+                        <div class="space-y-2 border-t border-gray-100 pt-4 mb-6 text-xs">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Avulso (Lash ou Brow):</span>
+                                <span class="font-bold text-brand-charcoal text-sm">R$ 180,00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-50 p-2 rounded-xl border border-green-100">
+                                <span class="text-green-800 font-medium">Combo Duo (Cílios + Sobrancelhas):</span>
+                                <div>
+                                    <span class="font-bold text-green-700 text-sm">R$ 310,00</span>
+                                    <span class="block text-[9px] text-green-600 text-right">Economize R$ 50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModalWithService('Brow Lamination & Lash Lifting')" class="w-full bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark py-2.5 rounded-xl text-xs font-semibold transition-colors">
+                        Agendar Sessão ou Combo
+                    </button>
+                </div>
+
+                <!-- Pricing Card 6 -->
+                <div class="price-card bg-white p-6 rounded-3xl border border-brand-pinkSoft/60 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif text-xl font-bold text-brand-charcoal">Harmonização Suave</h3>
+                            <span class="text-[10px] bg-brand-bluishSoft text-brand-slateAccent font-semibold px-2.5 py-0.5 rounded-full">90 min</span>
+                        </div>
+                        <p class="text-xs text-gray-500 mb-4">Preenchimento delicado com ácido hialurônico para sustentação natural.</p>
+                        
+                        <div class="space-y-2 border-t border-gray-100 pt-4 mb-6 text-xs">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-600">Avaliação Anatômica:</span>
+                                <span class="font-bold text-green-700 text-sm">Cortesia na aplicação</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-brand-pinkLight/40 p-2 rounded-xl border border-brand-pinkSoft">
+                                <span class="text-brand-pinkDark font-medium">A partir de (por ml):</span>
+                                <span class="font-bold text-brand-pinkDark text-sm">R$ 890,00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModalWithService('Harmonização Suave & Preenchimento')" class="w-full bg-brand-pinkLight hover:bg-brand-pinkSoft text-brand-pinkDark py-2.5 rounded-xl text-xs font-semibold transition-colors">
+                        Solicitar Avaliação
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Cursos de Estética Profissionais -->
+    <section id="cursos" class="py-20 bg-white border-t border-brand-pinkSoft/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-brand-bluishSoft text-brand-slateAccent font-semibold text-xs uppercase tracking-widest px-3.5 py-1.5 rounded-full inline-block">
+                    <i class="fa-solid fa-graduation-cap mr-1"></i> Formação Profissional em Estética
+                </span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-normal text-brand-charcoal mt-3">
+                    Cursos & Mentorias Thays Carneiro
+                </h2>
+                <p class="text-gray-600 mt-4 text-sm sm:text-base">
+                    Aprenda as técnicas mais avançadas e lucrativas da estética facial de alta performance diretamente com Thays Carneiro. Aulas teóricas e prática presencial intensiva.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                <!-- Curso 1 -->
+                <div class="bg-brand-pinkLight/20 rounded-3xl p-8 border border-brand-pinkSoft flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-brand-pinkLight text-brand-pinkDark flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-pump-medical"></i>
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-pinkDark bg-brand-pinkLight px-2.5 py-1 rounded-full inline-block mb-3">VIP Presencial</span>
+                        <h3 class="font-serif text-2xl font-bold text-brand-charcoal mb-2">Masterclass Limpeza de Pele & Extração Indolor</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-6">
+                            Domine o protocolo completo de higienização cutânea profunda, emoliência avançada sem agredir a barreira lipídica, extração ultrassônica e finalização hidroplástica.
+                        </p>
+                        <div class="space-y-2 border-t border-brand-pinkSoft/60 pt-4 mb-6 text-xs text-gray-700">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-clock text-brand-pinkDark"></i> <strong>Duração:</strong> 1 dia (8 horas intensivas)</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-user-group text-brand-pinkDark"></i> <strong>Turma:</strong> Máximo de 4 alunas</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-certificate text-brand-pinkDark"></i> <strong>Incluso:</strong> Certificado + Apostila + Kit Prático</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-tag text-brand-pinkDark"></i> <strong>Investimento:</strong> R$ 890,00 ou 6x de R$ 160,00</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Olá%20Thays!%20Tenho%20interesse%20no%20Curso%20Masterclass%20Limpeza%20de%20Pele." target="_blank" class="w-full bg-brand-pinkDark hover:bg-opacity-90 text-white text-center py-3 rounded-full text-xs font-semibold shadow-md transition-all">
+                        Garantir Vaga no Curso
+                    </a>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="bg-brand-bluishWhite/50 rounded-3xl p-8 border border-brand-bluishSoft flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-brand-bluishSoft text-brand-slateAccent flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-flask-vial"></i>
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-slateAccent bg-brand-bluishSoft px-2.5 py-1 rounded-full inline-block mb-3">Avançado</span>
+                        <h3 class="font-serif text-2xl font-bold text-brand-charcoal mb-2">Especialização em Peeling Químico & Gerenciamento de Melasma</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-6">
+                            Capacitação em cosmetologia aplicada, neutralizing peelings, associação de ácidos com fototerapia e prescrição estratégica de home care antimanhas.
+                        </p>
+                        <div class="space-y-2 border-t border-brand-bluishSoft/60 pt-4 mb-6 text-xs text-gray-700">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-clock text-brand-slateAccent"></i> <strong>Duração:</strong> 2 dias (16 horas)</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-user-group text-brand-slateAccent"></i> <strong>Turma:</strong> Individual / VIP</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-certificate text-brand-slateAccent"></i> <strong>Incluso:</strong> Certificado Profissional + Suporte Pós-Curso</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-tag text-brand-slateAccent"></i> <strong>Investimento:</strong> R$ 1.450,00 em até 10x</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Olá%20Thays!%20Quero%20saber%20mais%20sobre%20o%20Curso%20de%20Peeling%20e%20Melasma." target="_blank" class="w-full bg-brand-charcoal hover:bg-black text-white text-center py-3 rounded-full text-xs font-semibold shadow-md transition-all">
+                        Quero me Especializar
+                    </a>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="bg-brand-pinkLight/20 rounded-3xl p-8 border border-brand-pinkSoft flex flex-col justify-between hover:shadow-xl transition-all group">
+                    <div>
+                        <div class="w-12 h-12 rounded-2xl bg-brand-pinkLight text-brand-pinkDark flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <span class="text-[11px] font-bold uppercase tracking-wider text-brand-pinkDark bg-brand-pinkLight px-2.5 py-1 rounded-full inline-block mb-3">Prática Híbrida</span>
+                        <h3 class="font-serif text-2xl font-bold text-brand-charcoal mb-2">Formação Brow Lamination & Lash Lifting Expert</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed mb-6">
+                            Aprenda a transformar o olhar das clientes com biossegurança, química dos produtos de curvatura, coloração com tintura específica e protocolo de nutrição capilar.
+                        </p>
+                        <div class="space-y-2 border-t border-brand-pinkSoft/60 pt-4 mb-6 text-xs text-gray-700">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-clock text-brand-pinkDark"></i> <strong>Duração:</strong> 1 dia com prática em modelo real</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-briefcase text-brand-pinkDark"></i> <strong>Incluso:</strong> Kit inicial para os primeiros 15 atendimentos</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-certificate text-brand-pinkDark"></i> <strong>Certificação:</strong> Reconhecida nacionalmente</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-tag text-brand-pinkDark"></i> <strong>Investimento:</strong> R$ 680,00 à vista ou no cartão</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5511999999999?text=Olá%20Thays!%20Desejo%20me%20inscrever%20no%20Curso%20Lash%20Lifting%20e%20Brow%20Lamination." target="_blank" class="w-full bg-brand-pinkDark hover:bg-opacity-90 text-white text-center py-3 rounded-full text-xs font-semibold shadow-md transition-all">
+                        Inscrição Direct WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Diagnostic Quiz & AI Analysis Section -->
+    <section id="quiz" class="py-20 bg-gradient-to-br from-brand-pinkLight via-white to-brand-bluishSoft relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white/90 backdrop-blur-md rounded-3xl p-6 sm:p-10 border border-brand-pinkSoft shadow-xl relative overflow-hidden">
+                
+                <div class="text-center max-w-2xl mx-auto mb-8">
+                    <span class="bg-gradient-to-r from-brand-pinkDark to-brand-slateAccent text-white text-xs font-semibold uppercase tracking-widest px-3.5 py-1.5 rounded-full shadow-sm inline-flex items-center gap-1.5">
+                        <i class="fa-solid fa-sparkles"></i> Inteligência Artificial Dermatológica
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-charcoal mt-3">
+                        Análise de Pele & Protocolo Personalizado
+                    </h2>
+                    <p class="text-gray-600 text-sm mt-2">
+                        Escolha entre a recomendação rápida ou o Diagnóstico Completo com IA do Thays Carneiro Beauty Studio.
+                    </p>
+
+                    <!-- Toggle Tabs -->
+                    <div class="flex justify-center mt-6 bg-gray-100 p-1.5 rounded-full max-w-xs mx-auto border border-gray-200">
+                        <button id="tab-ai-btn" onclick="switchDiagTab('ai')" class="flex-1 py-2 px-4 rounded-full text-xs font-semibold transition-all bg-white text-brand-pinkDark shadow-sm">
+                            <i class="fa-solid fa-brain mr-1"></i> Análise IA
+                        </button>
+                        <button id="tab-fast-btn" onclick="switchDiagTab('fast')" class="flex-1 py-2 px-4 rounded-full text-xs font-semibold text-gray-600 hover:text-brand-charcoal transition-all">
+                            <i class="fa-solid fa-bolt mr-1"></i> Quiz Rápido
+                        </button>
+                    </div>
+                </div>
+
+                <!-- AI Diagnostic Form Mode -->
+                <div id="ai-diag-mode" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 mb-1">Tipo de Pele</label>
+                            <select id="ai-skin-type" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm bg-white">
+                                <option value="Mista">Mista (Zona T oleosa, bochechas normais/secas)</option>
+                                <option value="Oleosa">Oleosa (Com brilho frequente e poros dilatados)</option>
+                                <option value="Seca">Seca (Puxada, áspera ou com descamação)</option>
+                                <option value="Sensível">Sensível / Reativa (Fácil vermelhidão)</option>
+                                <option value="Normal">Normal (Equilibrada)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 mb-1">Faixa Etária</label>
+                            <select id="ai-age-group" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm bg-white">
+                                <option value="18-25 anos">18 - 25 anos</option>
+                                <option value="26-35 anos">26 - 35 anos</option>
+                                <option value="36-45 anos">36 - 45 anos</option>
+                                <option value="46-60 anos">46 - 60 anos</option>
+                                <option value="60+ anos">60+ anos</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Principal Preocupação com a Pele</label>
+                        <select id="ai-skin-concern" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm bg-white">
+                            <option value="Manchas, Melasma e Tom Irregular">Manchas, Melasma e Tom Irregular</option>
+                            <option value="Cravos, Oleosidade e Poros Obstruídos">Cravos, Oleosidade e Poros Obstruídos</option>
+                            <option value="Flacidez, Linhas de Expressão e Perda de Vulto">Flacidez, Linhas de Expressão e Perda de Vulto</option>
+                            <option value="Acne Ativa ou Cicatrizes de Acne">Acne Ativa ou Cicatrizes de Acne</option>
+                            <option value="Desidratação, Opacidade e Aspecto Cansado">Desidratação, Opacidade e Aspecto Cansado</option>
+                            <option value="Rosácea, Sensibilidade e Vermelhidão">Rosácea, Sensibilidade e Vermelhidão</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Rotina de Cuidados Atual (Opcional)</label>
+                        <input type="text" id="ai-routine-input" placeholder="Ex: Sabonete suave e protetor solar / Uso ácidos à noite" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm bg-white">
+                    </div>
+
+                    <button id="ai-diag-submit-btn" onclick="generateAiDiagnostic()" class="w-full bg-gradient-to-r from-brand-pinkMedium to-brand-pinkDark hover:opacity-95 text-white font-semibold py-4 rounded-2xl shadow-lg transition-all flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Gerar Análise Profunda com IA</span>
+                    </button>
+                </div>
+
+                <!-- AI Diagnostic Result Screen -->
+                <div id="ai-diag-result" class="hidden space-y-6 animate-fade-in">
+                    <div class="bg-brand-pinkLight/40 p-6 rounded-2xl border border-brand-pinkSoft/80">
+                        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 border-b border-brand-pinkSoft pb-4 mb-4">
+                            <div>
+                                <span class="text-[11px] font-semibold tracking-wider text-brand-slateAccent uppercase">Diagnóstico Dermatológico IA</span>
+                                <h3 class="font-serif text-2xl font-bold text-brand-charcoal mt-0.5">Resumo da Avaliação da Sua Pele</h3>
+                            </div>
+                            <button id="tts-audio-btn" onclick="playAiAudioSummary()" class="bg-white hover:bg-brand-pinkLight text-brand-pinkDark border border-brand-pinkMedium/60 px-4 py-2 rounded-full text-xs font-semibold transition-all flex items-center gap-2 shadow-sm">
+                                <i id="tts-icon" class="fa-solid fa-volume-high text-brand-pinkDark"></i>
+                                <span id="tts-btn-text">Ouvir Resumo de Thays Carneiro</span>
+                            </button>
+                        </div>
+                        <p id="ai-analysis-text" class="text-sm text-gray-700 leading-relaxed italic"></p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h4 class="font-serif text-lg font-semibold text-brand-charcoal flex items-center gap-2">
+                            <i class="fa-solid fa-clinic-medical text-brand-pinkDark"></i> Tratamentos de Clínica Indicados
+                        </h4>
+                        <div id="ai-clinic-treatments" class="grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-100">
+                            <h5 class="font-semibold text-xs text-amber-800 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-sun text-amber-500 text-sm"></i> Rotina Matinal Sugerida
+                            </h5>
+                            <ul id="ai-morning-steps" class="space-y-2 text-xs text-gray-700"></ul>
+                        </div>
+                        <div class="bg-indigo-50/60 p-5 rounded-2xl border border-indigo-100">
+                            <h5 class="font-semibold text-xs text-indigo-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-moon text-indigo-400 text-sm"></i> Rotina Noturna Sugerida
+                            </h5>
+                            <ul id="ai-evening-steps" class="space-y-2 text-xs text-gray-700"></ul>
+                        </div>
+                    </div>
+
+                    <div id="ai-tips-box" class="bg-brand-bluishWhite p-4 rounded-2xl border border-brand-bluishSoft text-xs text-gray-600 space-y-1"></div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row justify-between items-center gap-4">
+                        <button onclick="resetAiDiagnostic()" class="text-xs text-gray-500 underline hover:text-brand-charcoal">Refazer Análise IA</button>
+                        <a id="ai-whatsapp-btn" href="#" target="_blank" class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-semibold text-xs shadow-md inline-flex items-center justify-center gap-2 transition-colors">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Enviar Diagnóstico e Agendar no WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quiz Container Fast Mode -->
+                <div id="quiz-container" class="hidden space-y-8">
+                    <div>
+                        <label class="block font-serif text-xl font-semibold text-brand-charcoal mb-4 text-center">
+                            1. Qual o seu principal objetivo de cuidado hoje?
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <button type="button" onclick="selectQuizOption('goal', 'limpeza', this)" class="quiz-goal-btn p-4 rounded-2xl border-2 border-gray-200 hover:border-brand-pinkDark text-center transition-all bg-white hover:bg-brand-pinkLight/30">
+                                <i class="fa-solid fa-soap text-2xl text-brand-pinkDark mb-2"></i>
+                                <span class="block font-medium text-sm">Limpeza & Cravos</span>
+                            </button>
+                            <button type="button" onclick="selectQuizOption('goal', 'manchas', this)" class="quiz-goal-btn p-4 rounded-2xl border-2 border-gray-200 hover:border-brand-pinkDark text-center transition-all bg-white hover:bg-brand-pinkLight/30">
+                                <i class="fa-solid fa-sun text-2xl text-brand-pinkDark mb-2"></i>
+                                <span class="block font-medium text-sm">Manchas & Melasma</span>
+                            </button>
+                            <button type="button" onclick="selectQuizOption('goal', 'rejuvenecimento', this)" class="quiz-goal-btn p-4 rounded-2xl border-2 border-gray-200 hover:border-brand-pinkDark text-center transition-all bg-white hover:bg-brand-pinkLight/30">
+                                <i class="fa-solid fa-sparkles text-2xl text-brand-pinkDark mb-2"></i>
+                                <span class="block font-medium text-sm">Lifting & Colágeno</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block font-serif text-xl font-semibold text-brand-charcoal mb-4 text-center">
+                            2. Como é a sensibilidade da sua pele?
+                        </label>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <button type="button" onclick="selectQuizOption('sensitivity', 'normal', this)" class="quiz-sens-btn p-4 rounded-2xl border-2 border-gray-200 hover:border-brand-slateAccent text-center transition-all bg-white hover:bg-brand-bluishWhite">
+                                <span class="block font-medium text-sm">Normal a Resiliente</span>
+                                <span class="text-xs text-gray-500">Raramente reage a produtos</span>
+                            </button>
+                            <button type="button" onclick="selectQuizOption('sensitivity', 'sensivel', this)" class="quiz-sens-btn p-4 rounded-2xl border-2 border-gray-200 hover:border-brand-slateAccent text-center transition-all bg-white hover:bg-brand-bluishWhite">
+                                <span class="block font-medium text-sm">Sensível ou Reativa</span>
+                                <span class="text-xs text-gray-500">Fica vermelha com facilidade</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-center pt-4">
+                        <button id="quiz-submit" onclick="generateQuizResult()" disabled class="bg-gray-300 cursor-not-allowed text-white font-semibold px-8 py-3.5 rounded-full shadow-md transition-all">
+                            Ver Recomendação Personalizada
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Quiz Result Card -->
+                <div id="quiz-result" class="hidden text-center space-y-6 animate-fade-in">
+                    <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs uppercase tracking-widest text-brand-slateAccent font-semibold">Tratamento Indicado</span>
+                        <h3 id="result-title" class="font-serif text-3xl font-bold text-brand-charcoal mt-1">Limpeza Profunda Hidratante</h3>
+                        <p id="result-desc" class="text-gray-600 text-sm max-w-lg mx-auto mt-2">
+                            A combinação perfeita para desobstruir poros garantindo nutrição e alívio da pele sensível.
+                        </p>
+                    </div>
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                        <button onclick="resetQuiz()" class="text-xs text-gray-500 underline hover:text-brand-charcoal">Refazer Diagnóstico</button>
+                        <a id="result-whatsapp-btn" href="#" target="_blank" class="bg-brand-pinkDark text-white px-6 py-3 rounded-full font-semibold shadow-md hover:bg-opacity-90 inline-flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            <span>Agendar Recomendação pelo WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="depoimentos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-pinkDark font-semibold text-xs uppercase tracking-widest">Experiências Reais</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-charcoal mt-2">
+                    O que dizem nossas clientes
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl bg-brand-pinkLight/30 border border-brand-pinkSoft/60 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic text-sm leading-relaxed mb-6">
+                            "A limpeza de pele da Thays mudou completamente a textura do meu rosto. Ela cuida de cada detalhe com tanto carinho e profissionalismo. Saí radiante!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-pinkMedium/40 flex items-center justify-center font-bold text-brand-pinkDark text-sm">MC</div>
+                        <div>
+                            <p class="font-semibold text-sm text-brand-charcoal">Mariana Costa</p>
+                            <p class="text-xs text-gray-500">Cliente há 2 anos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-brand-bluishWhite border border-brand-bluishSoft flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic text-sm leading-relaxed mb-6">
+                            "Fiz o protocolo de microagulhamento e o resultado superou todas as expectativas. Minhas marcas de acne atenuaram de forma surpreendente."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-slateAccent/30 flex items-center justify-center font-bold text-brand-slateAccent text-sm">CS</div>
+                        <div>
+                            <p class="font-semibold text-sm text-brand-charcoal">Camila Silva</p>
+                            <p class="text-xs text-gray-500">Tratamento de Renovação</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-brand-pinkLight/30 border border-brand-pinkSoft/60 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 italic text-sm leading-relaxed mb-6">
+                            "Ambiente incrivelmente aconchegante e atendimento impecável. A massagem modeladora facial é relaxamento puro com efeito lifting!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-pinkMedium/40 flex items-center justify-center font-bold text-brand-pinkDark text-sm">FA</div>
+                        <div>
+                            <p class="font-semibold text-sm text-brand-charcoal">Fernanda Almeida</p>
+                            <p class="text-xs text-gray-500">Cliente Frequente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & FAQ Section -->
+    <section id="contato" class="py-20 bg-brand-bluishWhite/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-6 space-y-8">
+                    <div>
+                        <span class="text-brand-pinkDark font-semibold text-xs uppercase tracking-widest">Atendimento & Localização</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-normal text-brand-charcoal mt-2">
+                            Agende seu momento de cuidado
+                        </h2>
+                        <p class="text-gray-600 text-sm mt-3">
+                            Estamos prontas para lhe receber em um espaço exclusivo pensado para o seu total conforto e privacidade.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-brand-pinkSoft/50">
+                            <div class="w-10 h-10 rounded-xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-brand-charcoal">Endereço</h4>
+                                <p class="text-xs text-gray-600 mt-0.5">Av. Paulista, 1500 - Sala 802 - Bela Vista, São Paulo - SP</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-brand-pinkSoft/50">
+                            <div class="w-10 h-10 rounded-xl bg-brand-bluishSoft flex items-center justify-center text-brand-slateAccent shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-brand-charcoal">Horário de Funcionamento</h4>
+                                <p class="text-xs text-gray-600 mt-0.5">Segunda a Sexta: 09h às 19h | Sábado: 09h às 14h</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-2xl bg-white border border-brand-pinkSoft/50">
+                            <div class="w-10 h-10 rounded-xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark shrink-0">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-sm text-brand-charcoal">WhatsApp Direct</h4>
+                                <p class="text-xs text-gray-600 mt-0.5">(11) 99999-9999</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6">
+                        <h3 class="font-serif text-2xl font-semibold text-brand-charcoal mb-4">Dúvidas Frequentes</h3>
+                        <div class="space-y-3">
+                            <details class="group bg-white p-4 rounded-2xl border border-gray-200">
+                                <summary class="font-medium text-sm text-brand-charcoal cursor-pointer flex justify-between items-center">
+                                    <span>Preciso de avaliação prévia para os procedimentos?</span>
+                                    <i class="fa-solid fa-chevron-down text-xs transition-transform group-open:rotate-180"></i>
+                                </summary>
+                                <p class="text-xs text-gray-600 mt-3 leading-relaxed">
+                                    Sim! Na sua primeira sessão realizamos uma anamnese detalhada para mapear o histórico da sua pele e indicar o protocolo mais seguro.
+                                </p>
+                            </details>
+
+                            <details class="group bg-white p-4 rounded-2xl border border-gray-200">
+                                <summary class="font-medium text-sm text-brand-charcoal cursor-pointer flex justify-between items-center">
+                                    <span>Quais as formas de pagamento aceitas?</span>
+                                    <i class="fa-solid fa-chevron-down text-xs transition-transform group-open:rotate-180"></i>
+                                </summary>
+                                <p class="text-xs text-gray-600 mt-3 leading-relaxed">
+                                    Aceitamos PIX, cartões de crédito em até 6x sem juros e débito.
+                                </p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="bg-white p-8 sm:p-10 rounded-3xl border border-brand-pinkSoft shadow-lg">
+                        <h3 class="font-serif text-2xl text-brand-charcoal font-semibold mb-2">Envie uma Mensagem Directa</h3>
+                        <p class="text-xs text-gray-500 mb-6">Preencha os dados abaixo para tirar dúvidas ou solicitar informações.</p>
+
+                        <form id="contact-form" onsubmit="handleContactSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Nome Completo</label>
+                                <input type="text" required placeholder="Seu nome" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1">Telefone / WhatsApp</label>
+                                    <input type="tel" required placeholder="(11) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-gray-700 mb-1">E-mail</label>
+                                    <input type="email" required placeholder="seu@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Serviço de Interesse</label>
+                                <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm text-gray-700">
+                                    <option value="">Selecione um tratamento...</option>
+                                    <option value="limpeza">Limpeza de Pele Profunda</option>
+                                    <option value="peeling">Peeling Químico Otimizado</option>
+                                    <option value="microagulhamento">Microagulhamento & Drug Delivery</option>
+                                    <option value="harmonizacao">Harmonização Suave & Preenchimento</option>
+                                    <option value="drenagem">Drenagem & Massagem Sculpt</option>
+                                    <option value="sobrancelhas">Brow Lamination & Lash Lifting</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-gray-700 mb-1">Mensagem (Opcional)</label>
+                                <textarea rows="3" placeholder="Como podemos ajudar?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-brand-pinkDark hover:bg-opacity-90 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all text-sm">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-brand-charcoal text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Col 1: Logo & Tagline -->
+                <div class="space-y-4 md:col-span-1">
+                    <div class="flex items-center space-x-3.5">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#E2B2A3] via-brand-roseGold to-brand-pinkDark p-0.5 shrink-0">
+                            <div class="w-full h-full bg-brand-charcoal rounded-full flex items-center justify-center p-1.5">
+                                <svg viewBox="0 0 100 100" class="w-full h-full text-brand-pinkSoft" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 32 C25 18, 52 18, 68 24 C78 28, 86 20, 78 12 C68 5, 48 10, 35 22 C18 38, 12 62, 28 78 C42 92, 72 86, 82 68 C88 58, 76 46, 62 52 C48 58, 38 72, 54 82 C68 92, 88 74, 84 48 C80 26, 58 26, 42 40 L32 80 C30 87, 26 92, 20 90"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-sans font-semibold text-base tracking-[0.22em] text-white leading-none uppercase">THAYS CARNEIRO</span>
+                            <span class="font-sans font-normal text-[10px] tracking-[0.28em] text-brand-pinkMedium leading-tight lowercase mt-0.5">beauty studio</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400 leading-relaxed">
+                        Estética facial avançada, tratamentos personalizados e protocolos de regeneração dérmica com excelência e sensibilidade.
+                    </p>
+                </div>
+
+                <!-- Col 2: Navigation Links -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-semibold text-brand-pinkSoft uppercase tracking-widest">Navegação</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
+                        <li><a href="#sobre" class="hover:text-white transition-colors">Sobre Thays Carneiro</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Menu de Tratamentos</a></li>
+                        <li><a href="#quiz" class="hover:text-white transition-colors">Diagnóstico IA</a></li>
+                        <li><a href="#depoimentos" class="hover:text-white transition-colors">Depoimentos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Treatments -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-semibold text-brand-pinkSoft uppercase tracking-widest">Tratamentos</h4>
+                    <ul class="space-y-2 text-xs text-gray-400">
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Limpeza de Pele Profunda</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Peeling Químico Otimizado</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Microagulhamento</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Harmonização Suave</a></li>
+                        <li><a href="#servicos" class="hover:text-white transition-colors">Massagem Sculpt Facial</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact & Social -->
+                <div class="space-y-3">
+                    <h4 class="text-xs font-semibold text-brand-pinkSoft uppercase tracking-widest">Contato & Redes</h4>
+                    <p class="text-xs text-gray-400">Av. Paulista, 1500 - Sala 802<br>Bela Vista, São Paulo - SP</p>
+                    <p class="text-xs text-gray-400">WhatsApp: (11) 99999-9999</p>
+                    
+                    <div class="flex space-x-3 pt-2">
+                        <a href="https://instagram.com" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-brand-pinkDark transition-colors flex items-center justify-center text-gray-300 hover:text-white text-sm" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5511999999999" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-brand-pinkDark transition-colors flex items-center justify-center text-gray-300 hover:text-white text-sm" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://facebook.com" target="_blank" class="w-9 h-9 rounded-full bg-gray-800 hover:bg-brand-pinkDark transition-colors flex items-center justify-center text-gray-300 hover:text-white text-sm" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+                <p>&copy; 2026 Thays Carneiro Beauty Studio. Todos os direitos reservados.</p>
+                <div class="flex space-x-6 text-gray-500">
+                    <a href="#" class="hover:text-gray-300">Termos de Privacidade</a>
+                    <a href="#" class="hover:text-gray-300">Políticas da Clínica</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Appointment Modal (Pré-Agendamento) -->
+    <div id="booking-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl animate-fade-in max-h-[90vh] overflow-y-auto">
+            <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 p-2" aria-label="Fechar">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <span class="text-brand-pinkDark text-xs uppercase tracking-widest font-semibold">Pré-Agendamento Online</span>
+                <h3 class="font-serif text-2xl font-bold text-brand-charcoal mt-1">Reserve Seu Horário</h3>
+                <p class="text-xs text-gray-500 mt-1">Escolha o serviço e a data desejada para a equipe confirmar seu atendimento.</p>
+            </div>
+
+            <form id="booking-modal-form" onsubmit="handleBookingSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Nome Completo</label>
+                    <input type="text" id="modal-booking-name" required placeholder="Digite seu nome" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm">
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">WhatsApp / Celular</label>
+                        <input type="tel" id="modal-booking-phone" required placeholder="(11) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Serviço Desejado</label>
+                        <select id="modal-booking-service" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm text-gray-700 bg-white">
+                            <option value="">Selecione...</option>
+                            <option value="Limpeza de Pele Profunda">Limpeza de Pele Profunda</option>
+                            <option value="Peeling Químico Otimizado">Peeling Químico Otimizado</option>
+                            <option value="Microagulhamento & Drug Delivery">Microagulhamento & Drug Delivery</option>
+                            <option value="Harmonização Suave & Preenchimento">Harmonização Suave & Preenchimento</option>
+                            <option value="Drenagem & Massagem Sculpt">Drenagem & Massagem Sculpt</option>
+                            <option value="Brow Lamination & Lash Lifting">Brow Lamination & Lash Lifting</option>
+                            <option value="Avaliação Geral / Diagnóstico">Avaliação Geral / Consulta Inicial</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Data Preferencial</label>
+                        <input type="date" id="modal-booking-date" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm bg-white">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Turno de Preferência</label>
+                        <select id="modal-booking-time" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm bg-white">
+                            <option value="Manhã (09h - 12h)">Manhã (09h às 12h)</option>
+                            <option value="Tarde (13h - 17h)">Tarde (13h às 17h)</option>
+                            <option value="Fim de Tarde (17h - 19h)">Fim de Tarde (17h às 19h)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Observações (Opcional)</label>
+                    <textarea id="modal-booking-notes" rows="2" placeholder="Alguma sensibilidade ou alergia que devamos saber?" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-sm"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-brand-pinkMedium to-brand-pinkDark hover:opacity-95 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Confirmar Pré-Agendamento via WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Service Details Modal -->
+    <div id="service-detail-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl animate-fade-in max-h-[90vh] overflow-y-auto">
+            <button onclick="closeServiceDetail()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <div class="flex items-center space-x-4 mb-4">
+                <div id="service-modal-icon" class="w-12 h-12 rounded-2xl bg-brand-pinkLight flex items-center justify-center text-brand-pinkDark text-2xl shrink-0"></div>
+                <div>
+                    <h3 id="service-modal-title" class="font-serif text-2xl font-bold text-brand-charcoal"></h3>
+                    <p id="service-modal-duration" class="text-xs text-brand-slateAccent font-semibold mt-0.5"></p>
+                </div>
+            </div>
+
+            <p id="service-modal-desc" class="text-sm text-gray-600 leading-relaxed mb-6"></p>
+
+            <div class="bg-brand-bluishWhite/70 p-4 rounded-2xl border border-brand-bluishSoft mb-6">
+                <h4 class="font-semibold text-xs text-brand-charcoal uppercase tracking-wider mb-2">O que está incluso neste protocolo:</h4>
+                <ul id="service-modal-list" class="space-y-2 text-xs text-gray-600 list-disc list-inside"></ul>
+            </div>
+
+            <div class="flex gap-3">
+                <button onclick="closeServiceDetail()" class="flex-1 py-3 rounded-xl border border-gray-200 text-xs font-semibold text-gray-600 hover:bg-gray-50">Fechar</button>
+                <button onclick="openModalFromDetail()" class="flex-1 py-3 rounded-xl bg-brand-pinkDark text-white text-xs font-semibold shadow-md hover:bg-opacity-90">Agendar este Serviço</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Checkout / Meio de Pagamento para Assinaturas -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 hidden bg-black/50 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl animate-fade-in max-h-[90vh] overflow-y-auto">
+            <button onclick="closeCheckoutModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 p-2" aria-label="Fechar">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+
+            <!-- Cabeçalho do Plano -->
+            <div class="text-center mb-6">
+                <span class="bg-brand-pinkLight text-brand-pinkDark text-[11px] uppercase tracking-widest font-semibold px-3 py-1 rounded-full border border-brand-pinkSoft inline-block mb-2">
+                    <i class="fa-solid fa-shield-halved mr-1"></i> Checkout Seguro do Clube VIP
+                </span>
+                <h3 id="checkout-plan-title" class="font-serif text-2xl font-bold text-brand-charcoal">Assinatura do Plano</h3>
+                <p id="checkout-plan-price" class="text-lg font-bold text-brand-pinkDark mt-1">R$ 0,00 / mês</p>
+            </div>
+
+            <!-- Seletor de Meio de Pagamento -->
+            <div class="flex gap-3 mb-6">
+                <button id="pay-method-pix" onclick="switchPaymentMethod('pix')" class="flex-1 py-3 px-3 rounded-2xl border-2 border-brand-pinkDark bg-brand-pinkLight/30 text-brand-pinkDark font-semibold text-xs flex items-center justify-center gap-2 transition-all">
+                    <i class="fa-solid fa-pix text-base"></i>
+                    <span>PIX (Aprovação Instantânea)</span>
+                </button>
+                <button id="pay-method-card" onclick="switchPaymentMethod('card')" class="flex-1 py-3 px-3 rounded-2xl border-2 border-gray-200 text-gray-600 font-semibold text-xs flex items-center justify-center gap-2 hover:border-brand-pinkDark transition-all">
+                    <i class="fa-solid fa-credit-card text-base"></i>
+                    <span>Cartão de Crédito</span>
+                </button>
+            </div>
+
+            <!-- Visão de Pagamento via PIX -->
+            <div id="pay-view-pix" class="space-y-4">
+                <div class="bg-brand-bluishWhite p-4 rounded-2xl border border-brand-bluishSoft text-center">
+                    <p class="text-xs text-gray-600 mb-3">Escaneie o QR Code com o app do seu banco ou copie o código Pix abaixo:</p>
+                    
+                    <!-- Simulação de QR Code -->
+                    <div class="w-44 h-44 bg-white p-2 rounded-2xl mx-auto shadow-sm border border-gray-200 flex items-center justify-center mb-3">
+                        <img id="pix-qr-img" src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=00020126580014BR.GOV.BCB.PIX0136thayscarneiro.estetica@gmail.com" alt="QR Code Pix Assinatura" class="w-full h-full object-contain">
+                    </div>
+
+                    <div class="bg-white p-2.5 rounded-xl border border-gray-200 flex items-center justify-between gap-2">
+                        <input type="text" id="pix-copy-input" readonly value="00020126580014BR.GOV.BCB.PIX0136thayscarneiro.estetica@gmail.com52040000" class="text-[11px] text-gray-600 bg-transparent flex-1 border-none outline-none font-mono truncate">
+                        <button onclick="copyPixCode()" class="bg-brand-pinkDark text-white px-3 py-1.5 rounded-lg text-xs font-semibold hover:opacity-90 transition-all shrink-0">
+                            <i class="fa-regular fa-copy mr-1"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+
+                <button onclick="confirmPixPayment()" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all text-xs flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-circle-check text-base"></i>
+                    <span>Já fiz o Pix, confirmar assinatura</span>
+                </button>
+            </div>
+
+            <!-- Visão de Pagamento via Cartão de Crédito -->
+            <form id="pay-view-card" onsubmit="handleCardPayment(event)" class="hidden space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Nome impresso no Cartão</label>
+                    <input type="text" required placeholder="NOME COMO ESTÁ NO CARTÃO" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-xs uppercase">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">Número do Cartão</label>
+                    <div class="relative">
+                        <input type="text" required placeholder="0000 0000 0000 0000" maxlength="19" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-xs">
+                        <i class="fa-solid fa-credit-card absolute right-4 top-3 text-gray-400 text-sm"></i>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">Validade (MM/AA)</label>
+                        <input type="text" required placeholder="MM/AA" maxlength="5" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-xs">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-gray-700 mb-1">CVV / Segurança</label>
+                        <input type="text" required placeholder="123" maxlength="4" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-xs">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-700 mb-1">CPF do Titular</label>
+                    <input type="text" required placeholder="000.000.000-00" class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-xs">
+                </div>
+
+                <div class="bg-gray-50 p-3 rounded-xl border border-gray-200 text-[11px] text-gray-500 flex items-center gap-2">
+                    <i class="fa-solid fa-lock text-brand-pinkDark text-sm"></i>
+                    <span>Cobrança mensal recorrente com suporte e cancelamento simplificado.</span>
+                </div>
+
+                <button type="submit" id="card-pay-btn" class="w-full bg-gradient-to-r from-brand-pinkMedium to-brand-pinkDark hover:opacity-95 text-white font-semibold py-3.5 rounded-xl shadow-md transition-all text-xs flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Finalizar Assinatura no Cartão</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating AI Chat Assistant -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-2">
+        <button id="ai-chat-trigger" onclick="toggleAiChat()" class="group bg-gradient-to-r from-brand-pinkDark to-brand-pinkMedium text-white p-4 rounded-full shadow-2xl hover:scale-105 active:scale-95 transition-all flex items-center justify-center relative">
+            <i class="fa-solid fa-robot text-2xl"></i>
+            <span class="absolute -top-1 -right-1 w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+            <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-semibold pl-0 group-hover:pl-2">
+                Dúvidas sobre sua pele? Fale com a IA
+            </span>
+        </button>
+    </div>
+
+    <!-- AI Chat Window -->
+    <div id="ai-chat-window" class="fixed bottom-24 right-4 sm:right-6 z-50 w-[92vw] sm:w-[380px] max-h-[550px] h-[80vh] bg-white rounded-3xl shadow-2xl border border-brand-pinkSoft flex flex-col hidden overflow-hidden animate-fade-in">
+        <div class="bg-gradient-to-r from-brand-pinkDark to-brand-pinkMedium text-white p-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white text-lg">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-sm leading-tight">Thays IA • Assistente Virtual</h4>
+                    <p class="text-[10px] text-brand-pinkLight opacity-90">Atendimento acolhedor e personalizado</p>
+                </div>
+            </div>
+            <button onclick="toggleAiChat()" class="text-white/80 hover:text-white p-1">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+        </div>
+
+        <div id="ai-chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 bg-brand-bluishWhite/30 text-xs">
+            <div class="flex items-start gap-2 max-w-[85%]">
+                <div class="w-7 h-7 rounded-full bg-brand-pinkSoft text-brand-pinkDark flex items-center justify-center text-xs shrink-0 font-bold">TC</div>
+                <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-brand-pinkSoft/60 shadow-sm text-gray-700 leading-relaxed">
+                    Olá! Sou a assistente virtual do <strong>Thays Carneiro Beauty Studio</strong>. ✨ Posso tirar suas dúvidas sobre tratamentos, planos de assinatura, preços, cursos de estética e te guiar pelas seções da página. Como posso ajudar?
+                </div>
+            </div>
+
+            <div id="ai-quick-pills" class="pt-1 space-y-1.5">
+                <p class="text-[10px] font-semibold text-gray-400 uppercase tracking-wider">Perguntas Frequentes:</p>
+                <div class="flex flex-wrap gap-1.5">
+                    <button onclick="sendQuickQuestion('Quais são os planos de assinatura mensal e o que incluem?')" class="bg-white hover:bg-brand-pinkLight text-brand-charcoal border border-brand-pinkSoft px-2.5 py-1 rounded-full text-[11px] transition-all text-left">
+                        👑 Planos Mensais
+                    </button>
+                    <button onclick="sendQuickQuestion('Quais formas de pagamento são aceitas?')" class="bg-white hover:bg-brand-pinkLight text-brand-charcoal border border-brand-pinkSoft px-2.5 py-1 rounded-full text-[11px] transition-all text-left">
+                        💳 Formas de Pagamento
+                    </button>
+                    <button onclick="sendQuickQuestion('Quais cursos de estética oferecem e quais os valores?')" class="bg-white hover:bg-brand-pinkLight text-brand-charcoal border border-brand-pinkSoft px-2.5 py-1 rounded-full text-[11px] transition-all text-left">
+                        🎓 Cursos da Thays
+                    </button>
+                    <button onclick="sendQuickQuestion('Como funciona o pré-agendamento e quais os links das seções?')" class="bg-white hover:bg-brand-pinkLight text-brand-charcoal border border-brand-pinkSoft px-2.5 py-1 rounded-full text-[11px] transition-all text-left">
+                        🔗 Seções da Página
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3 bg-white border-t border-brand-pinkSoft/60 flex items-center gap-2">
+            <input type="text" id="ai-chat-input" onkeydown="if(event.key==='Enter') sendAiChatMessage()" placeholder="Digite sua dúvida sobre pele..." class="flex-1 px-3.5 py-2.5 rounded-full border border-gray-200 focus:outline-none focus:border-brand-pinkDark text-xs text-gray-800">
+            <button onclick="sendAiChatMessage()" class="w-9 h-9 rounded-full bg-brand-pinkDark hover:bg-opacity-90 text-white flex items-center justify-center transition-all shrink-0">
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="toast-message" class="fixed bottom-6 left-6 z-50 hidden bg-brand-charcoal text-white px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 text-xs border border-gray-700 animate-bounce">
+        <i class="fa-solid fa-circle-check text-green-400 text-lg"></i>
+        <span id="toast-text">Ação realizada com sucesso!</span>
+    </div>
+
+    <script>
+        const serviceData = {
+            limpeza: {
+                title: "Limpeza de Pele Profunda",
+                duration: "75 minutos",
+                icon: "fa-solid fa-spa",
+                desc: "Tratamento completo para desobstrução de poros e higienização das camadas superficiais. Promove a remoção de células mortas e hidratação profunda sem agredir a pele.",
+                items: ["Emoliência com vapor de ozônio", "Extração manual e ultrassônica", "Alta frequência antisséptica", "Máscara hidroplástica calmante"]
+            },
+            peeling: {
+                title: "Peeling Químico Otimizado",
+                duration: "50 minutos",
+                icon: "fa-solid fa-wand-magic-sparkles",
+                desc: "Aplicação controlada de ácidos dermatológicos para estímulo da renovação celular. Indicado para tratamento de hiperpigmentações, textura irregular e rugas finas.",
+                items: ["Higienização desengordurante", "Blend de ácidos personalizados", "Ativos antioxidantes", "Fotoproteção avançada"]
+            },
+            microagulhamento: {
+                title: "Microagulhamento & Drug Delivery",
+                duration: "60 minutos",
+                icon: "fa-solid fa-syringe",
+                desc: "Terapia de indução percutânea de colágeno através de microagulhas estéreis, permitindo a infusão direta de séruns concentrados na derme.",
+                items: ["Anestésico tópico suave", "Microagulhamento de precisão", "Infusão de Fatores de Crescimento", "Máscara regeneradora LED"]
+            },
+            harmonizacao: {
+                title: "Harmonização Suave & Preenchimento",
+                duration: "90 minutos",
+                icon: "fa-solid fa-gem",
+                desc: "Procedimento estético injetável para valorização dos pontos fortes da face de forma sutil, restaurando sustentação e definição sem exageros.",
+                items: ["Mapeamento anatômico tridimensional", "Aplicação de ácido hialurônico", "Massagem de acomodação", "Acompanhamento pós-procedimento"]
+            },
+            massagem: {
+                title: "Drenagem & Massagem Sculpt Facial",
+                duration: "45 minutos",
+                icon: "fa-solid fa-hand-holding-heart",
+                desc: "Combinação de manobras de drenagem linfática com técnicas modeladoras faciais para reduzir edemas e tonificar a musculatura facial.",
+                items: ["Higienização com água termal", "Manobras de drenagem e lifting", "Esferas de cromoterapia geladas", "Sérum tensor finalizador"]
+            },
+            cilios: {
+                title: "Brow Lamination & Lash Lifting",
+                duration: "60 minutos",
+                icon: "fa-solid fa-eye",
+                desc: "Procedimento para realçar o olhar. Alinha e encorpa os fios das sobrancelhas enquanto proporciona curvatura duradoura aos cílios naturais.",
+                items: ["Alinhamento e design dos fios", "Nutrição com Queratina e Vitaminas", "Tintura especial de longa duração", "Hidratação intensiva final"]
+            }
+        };
+
+        const apiKey = "";
+
+        async function fetchWithRetry(url, options, retries = 3, backoff = 1000) {
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, options);
+                    if (response.ok) return response;
+                    if (response.status === 429 && i < retries - 1) {
+                        await new Promise(r => setTimeout(r, backoff * Math.pow(2, i)));
+                        continue;
+                    }
+                    return response;
+                } catch (err) {
+                    if (i === retries - 1) throw err;
+                    await new Promise(r => setTimeout(r, backoff * Math.pow(2, i)));
+                }
+            }
+        }
+
+        // Navigation Menu Toggle
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Plan Checkout Control Functions
+        let currentCheckoutPlan = { name: '', price: '' };
+
+        function subscribePlan(planName, price) {
+            openCheckoutModal(planName, price);
+        }
+
+        function openCheckoutModal(planName, price) {
+            currentCheckoutPlan = { name: planName, price: price };
+            document.getElementById('checkout-plan-title').innerText = planName;
+            document.getElementById('checkout-plan-price').innerText = `R$ ${price},00 / mês`;
+            
+            // Gera URL dinâmica para QR Code do Pix com o valor do plano
+            const qrData = encodeURIComponent(`00020126580014BR.GOV.BCB.PIX0136thayscarneiro.estetica@gmail.com5204000053039865802BR5922ThaysCarneiroStudio6009SaoPaulo62070503***6304VALOR${price}`);
+            document.getElementById('pix-qr-img').src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${qrData}`;
+            
+            document.getElementById('checkout-modal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkout-modal').classList.add('hidden');
+        }
+
+        function switchPaymentMethod(method) {
+            const pixBtn = document.getElementById('pay-method-pix');
+            const cardBtn = document.getElementById('pay-method-card');
+            const pixView = document.getElementById('pay-view-pix');
+            const cardView = document.getElementById('pay-view-card');
+
+            if (method === 'pix') {
+                pixBtn.className = "flex-1 py-3 px-3 rounded-2xl border-2 border-brand-pinkDark bg-brand-pinkLight/30 text-brand-pinkDark font-semibold text-xs flex items-center justify-center gap-2 transition-all";
+                cardBtn.className = "flex-1 py-3 px-3 rounded-2xl border-2 border-gray-200 text-gray-600 font-semibold text-xs flex items-center justify-center gap-2 hover:border-brand-pinkDark transition-all";
+                pixView.classList.remove('hidden');
+                cardView.classList.add('hidden');
+            } else {
+                cardBtn.className = "flex-1 py-3 px-3 rounded-2xl border-2 border-brand-pinkDark bg-brand-pinkLight/30 text-brand-pinkDark font-semibold text-xs flex items-center justify-center gap-2 transition-all";
+                pixBtn.className = "flex-1 py-3 px-3 rounded-2xl border-2 border-gray-200 text-gray-600 font-semibold text-xs flex items-center justify-center gap-2 hover:border-brand-pinkDark transition-all";
+                cardView.classList.remove('hidden');
+                pixView.classList.add('hidden');
+            }
+        }
+
+        function copyPixCode() {
+            const pixInput = document.getElementById('pix-copy-input');
+            pixInput.select();
+            document.execCommand('copy');
+            showToast("Código Pix copiado com sucesso!");
+        }
+
+        function confirmPixPayment() {
+            closeCheckoutModal();
+            const msg = `Olá Thays Carneiro Beauty Studio! Realizei o pagamento do *${currentCheckoutPlan.name}* (R$ ${currentCheckoutPlan.price}/mês) via PIX. Segue o comprovante para validação da minha assinatura VIP!`;
+            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`;
+            showToast("Assinatura via Pix registrada! Redirecionando para o WhatsApp...");
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+            }, 1000);
+        }
+
+        function handleCardPayment(e) {
+            e.preventDefault();
+            const payBtn = document.getElementById('card-pay-btn');
+            payBtn.disabled = true;
+            payBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Processando Assinatura...`;
+
+            setTimeout(() => {
+                closeCheckoutModal();
+                payBtn.disabled = false;
+                payBtn.innerHTML = `<i class="fa-solid fa-lock"></i><span>Finalizar Assinatura no Cartão</span>`;
+                e.target.reset();
+
+                const msg = `Olá Thays Carneiro Beauty Studio! Concluí a assinatura do *${currentCheckoutPlan.name}* (R$ ${currentCheckoutPlan.price}/mês) via Cartão de Crédito!`;
+                const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`;
+                showToast("Assinatura no cartão aprovada com sucesso! Bem-vinda ao Clube VIP.");
+                setTimeout(() => {
+                    window.open(whatsappUrl, '_blank');
+                }, 1200);
+            }, 1800);
+        }
+
+        // Pricing Filter Handler
+        function filterPricing(type) {
+            const btnAll = document.getElementById('price-tab-all');
+            const btnCombos = document.getElementById('price-tab-combos');
+            
+            if (type === 'all') {
+                btnAll.className = "flex-1 py-2 px-3 rounded-full text-xs font-semibold bg-brand-pinkDark text-white shadow-sm transition-all";
+                btnCombos.className = "flex-1 py-2 px-3 rounded-full text-xs font-semibold text-gray-600 hover:text-brand-charcoal transition-all";
+            } else {
+                btnCombos.className = "flex-1 py-2 px-3 rounded-full text-xs font-semibold bg-brand-pinkDark text-white shadow-sm transition-all";
+                btnAll.className = "flex-1 py-2 px-3 rounded-full text-xs font-semibold text-gray-600 hover:text-brand-charcoal transition-all";
+            }
+        }
+
+        document.getElementById('menu-btn').addEventListener('click', toggleMenu);
+
+        // Booking Modal Controls
+        function openModal() {
+            document.getElementById('booking-modal').classList.remove('hidden');
+        }
+
+        function openModalWithService(serviceName) {
+            openModal();
+            const select = document.getElementById('modal-booking-service');
+            if (select) {
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value.includes(serviceName) || serviceName.includes(select.options[i].value)) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('booking-modal').classList.add('hidden');
+        }
+
+        function handleBookingSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('modal-booking-name').value;
+            const phone = document.getElementById('modal-booking-phone').value;
+            const service = document.getElementById('modal-booking-service').value;
+            const date = document.getElementById('modal-booking-date').value;
+            const time = document.getElementById('modal-booking-time').value;
+            const notes = document.getElementById('modal-booking-notes').value;
+
+            closeModal();
+
+            // Format WhatsApp Message
+            const msg = `Olá Thays Carneiro Beauty Studio! Gostaria de fazer um pré-agendamento:\n- *Nome:* ${name}\n- *Telefone:* ${phone}\n- *Serviço:* ${service}\n- *Data:* ${date}\n- *Turno:* ${time}${notes ? '\n- *Obs:* ' + notes : ''}`;
+            const whatsappUrl = `https://wa.me/5511999999999?text=${encodeURIComponent(msg)}`;
+
+            showToast("Abrindo WhatsApp para finalizar seu pré-agendamento...");
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+            }, 800);
+
+            e.target.reset();
+        }
+
+        // Service Details Modal Controls
+        let selectedServiceForBooking = '';
+        function openServiceDetail(key) {
+            const data = serviceData[key];
+            if (!data) return;
+
+            selectedServiceForBooking = data.title;
+            document.getElementById('service-modal-title').innerText = data.title;
+            document.getElementById('service-modal-duration').innerText = `Duração estimada: ${data.duration}`;
+            document.getElementById('service-modal-desc').innerText = data.desc;
+            document.getElementById('service-modal-icon').innerHTML = `<i class="${data.icon}"></i>`;
+
+            const listContainer = document.getElementById('service-modal-list');
+            listContainer.innerHTML = '';
+            data.items.forEach(item => {
+                const li = document.createElement('li');
+                li.innerText = item;
+                listContainer.appendChild(li);
+            });
+
+            document.getElementById('service-detail-modal').classList.remove('hidden');
+        }
+
+        function closeServiceDetail() {
+            document.getElementById('service-detail-modal').classList.add('hidden');
+        }
+
+        function openModalFromDetail() {
+            closeServiceDetail();
+            openModalWithService(selectedServiceForBooking);
+        }
+
+        // Diagnostic Tab Switcher
+        function switchDiagTab(tab) {
+            const aiBtn = document.getElementById('tab-ai-btn');
+            const fastBtn = document.getElementById('tab-fast-btn');
+            const aiMode = document.getElementById('ai-diag-mode');
+            const quizContainer = document.getElementById('quiz-container');
+
+            if (tab === 'ai') {
+                aiBtn.className = 'flex-1 py-2 px-4 rounded-full text-xs font-semibold transition-all bg-white text-brand-pinkDark shadow-sm';
+                fastBtn.className = 'flex-1 py-2 px-4 rounded-full text-xs font-semibold text-gray-600 hover:text-brand-charcoal transition-all';
+                aiMode.classList.remove('hidden');
+                quizContainer.classList.add('hidden');
+            } else {
+                fastBtn.className = 'flex-1 py-2 px-4 rounded-full text-xs font-semibold transition-all bg-white text-brand-pinkDark shadow-sm';
+                aiBtn.className = 'flex-1 py-2 px-4 rounded-full text-xs font-semibold text-gray-600 hover:text-brand-charcoal transition-all';
+                quizContainer.classList.remove('hidden');
+                aiMode.classList.add('hidden');
+                document.getElementById('ai-diag-result').classList.add('hidden');
+            }
+        }
+
+        let lastAiSpokenSummary = "";
+        let currentAudioObject = null;
+
+        async function generateAiDiagnostic() {
+            const skinType = document.getElementById('ai-skin-type').value;
+            const ageGroup = document.getElementById('ai-age-group').value;
+            const concern = document.getElementById('ai-skin-concern').value;
+            const currentRoutine = document.getElementById('ai-routine-input').value || 'Rotina básica não informada';
+
+            const submitBtn = document.getElementById('ai-diag-submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Analisando a sua Pele...`;
+
+            if (!apiKey) {
+                window.setTimeout(() => {
+                    renderAiDiagnosticResult(buildPersonalizedDiagnostic({ skinType, ageGroup, concern, currentRoutine }));
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i><span>Gerar Análise Profunda com IA</span>`;
+                }, 650);
+                return;
+            }
+
+            const systemPrompt = `Você é Thays Carneiro, especialista em Estética Facial de Alta Performance e fundadora do Thays Carneiro Beauty Studio. Analise as características da cliente e gere um plano de cuidados elegante e prático em português do Brasil.`;
+
+            const userPrompt = `Análise de Pele:
+- Tipo: ${skinType}
+- Idade: ${ageGroup}
+- Queixa principal: ${concern}
+- Rotina atual: ${currentRoutine}`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userPrompt }] }],
+                systemInstruction: { parts: [{ text: systemPrompt }] },
+                generationConfig: {
+                    responseMimeType: "application/json",
+                    responseSchema: {
+                        type: "OBJECT",
+                        properties: {
+                            analysisSummary: { type: "STRING" },
+                            recommendedClinicTreatments: {
+                                type: "ARRAY",
+                                items: {
+                                    type: "OBJECT",
+                                    properties: {
+                                        name: { type: "STRING" },
+                                        reason: { type: "STRING" },
+                                        recommendedFrequency: { type: "STRING" }
+                                    },
+                                    required: ["name", "reason", "recommendedFrequency"]
+                                }
+                            },
+                            morningRoutine: { type: "ARRAY", items: { type: "STRING" } },
+                            eveningRoutine: { type: "ARRAY", items: { type: "STRING" } },
+                            professionalTips: { type: "ARRAY", items: { type: "STRING" } },
+                            spokenSummaryPrompt: { type: "STRING" }
+                        },
+                        required: ["analysisSummary", "recommendedClinicTreatments", "morningRoutine", "eveningRoutine", "professionalTips", "spokenSummaryPrompt"]
+                    }
+                }
+            };
+
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetchWithRetry(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const jsonText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                if (jsonText) {
+                    const data = JSON.parse(jsonText);
+                    renderAiDiagnosticResult(data);
+                } else {
+                    showToast("Não foi possível gerar a análise no momento.");
+                }
+            } catch (err) {
+                console.error("Erro no Gemini:", err);
+                showToast("Erro ao conectar com a IA. Tente novamente.");
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = `<i class="fa-solid fa-wand-magic-sparkles"></i><span>Gerar Análise Profunda com IA</span>`;
+            }
+        }
+
+        function buildPersonalizedDiagnostic({ skinType, ageGroup, concern, currentRoutine }) {
+            const recommendationsByConcern = {
+                'Manchas, Melasma e Tom Irregular': {
+                    treatments: [
+                        { name: 'Peeling Químico Otimizado', reason: 'Protocolo focado em renovar a textura e uniformizar o tom de forma progressiva.', recommendedFrequency: 'Pacote 3 sessões · R$ 560' },
+                        { name: 'Limpeza de Pele Profunda', reason: 'Prepara a pele para receber os ativos do protocolo com mais conforto e uniformidade.', recommendedFrequency: '1 sessão inicial · R$ 150' }
+                    ],
+                    offer: 'Para manter a evolução, o plano Glow Essential inclui uma sessão mensal e 10% de desconto em produtos de home care.'
+                },
+                'Cravos, Oleosidade e Poros Obstruídos': {
+                    treatments: [
+                        { name: 'Limpeza de Pele Profunda', reason: 'Ajuda a desobstruir os poros e a devolver uma sensação de pele equilibrada.', recommendedFrequency: 'Pacote 3 sessões · R$ 380' },
+                        { name: 'Peeling Químico Otimizado', reason: 'Pode complementar o cuidado de textura e aparência dos poros após avaliação profissional.', recommendedFrequency: 'Conforme avaliação · R$ 220' }
+                    ],
+                    offer: 'O Glow Essential é uma alternativa prática para transformar a limpeza em cuidado mensal e ainda ter desconto em home care.'
+                },
+                'Flacidez, Linhas de Expressão e Perda de Vulto': {
+                    treatments: [
+                        { name: 'Microagulhamento & Drug Delivery', reason: 'Focado no estímulo de colágeno e no suporte à textura e firmeza da pele.', recommendedFrequency: 'Pacote 3 sessões · R$ 890' },
+                        { name: 'Harmonização Suave', reason: 'Uma avaliação permite entender se há indicação para valorizar contornos de forma natural.', recommendedFrequency: 'Avaliação cortesia' }
+                    ],
+                    offer: 'Para uma jornada contínua de rejuvenescimento, o Prime Radiance VIP reúne dois tratamentos faciais por mês e benefícios exclusivos.'
+                },
+                'Acne Ativa ou Cicatrizes de Acne': {
+                    treatments: [
+                        { name: 'Limpeza de Pele Profunda', reason: 'Ajuda a remover impurezas e a organizar uma rotina profissional adequada à sua pele.', recommendedFrequency: '1 sessão inicial · R$ 150' },
+                        { name: 'Peeling Químico Otimizado', reason: 'Pode ser considerado pela profissional para textura e marcas, respeitando o momento da pele.', recommendedFrequency: 'Conforme avaliação · R$ 220' }
+                    ],
+                    offer: 'O acompanhamento pelo Glow Essential facilita a constância do cuidado e oferece 10% de desconto em produtos de home care.'
+                },
+                'Desidratação, Opacidade e Aspecto Cansado': {
+                    treatments: [
+                        { name: 'Limpeza de Pele Profunda', reason: 'Une higienização e hidratação para recuperar conforto, maciez e luminosidade.', recommendedFrequency: '1 sessão · R$ 150' },
+                        { name: 'Drenagem & Massagem Sculpt Facial', reason: 'Complementa o ritual com efeito de bem-estar e aparência mais descansada.', recommendedFrequency: 'Sessão avulsa · R$ 130' }
+                    ],
+                    offer: 'O plano Glow Essential inclui uma sessão mensal e hidratação hidroplástica de cortesia, uma ótima forma de manter esse resultado.'
+                },
+                'Rosácea, Sensibilidade e Vermelhidão': {
+                    treatments: [
+                        { name: 'Limpeza de Pele Profunda', reason: 'A profissional pode adaptar o protocolo para priorizar conforto, barreira cutânea e suavidade.', recommendedFrequency: 'Avaliação antes da sessão' },
+                        { name: 'Drenagem & Massagem Sculpt Facial', reason: 'Uma opção de autocuidado leve, indicada apenas após avaliação da sensibilidade da pele.', recommendedFrequency: 'Conforme avaliação · R$ 130' }
+                    ],
+                    offer: 'A avaliação permite montar um plano seguro; depois, o Glow Essential pode ajudar a manter a rotina profissional e os benefícios em home care.'
+                }
+            };
+            const plan = recommendationsByConcern[concern] || recommendationsByConcern['Desidratação, Opacidade e Aspecto Cansado'];
+            const sensitivityNote = skinType === 'Sensível' ? 'Como sua pele é sensível, a personalização e o teste de tolerância são ainda mais importantes.' : `Para a pele ${skinType.toLowerCase()}, uma rotina consistente potencializa os resultados do atendimento.`;
+            const summary = `Considerando uma pele ${skinType.toLowerCase()}, a faixa de ${ageGroup} e sua queixa sobre ${concern.toLowerCase()}, a melhor jornada começa com ${plan.treatments[0].name}. ${sensitivityNote} ${plan.offer} Esta é uma orientação estética inicial e a indicação final é confirmada na avaliação profissional.`;
+
+            return {
+                analysisSummary: summary,
+                recommendedClinicTreatments: plan.treatments,
+                morningRoutine: ['Higienize suavemente a pele.', 'Aplique hidratação compatível com seu tipo de pele.', 'Finalize com protetor solar todos os dias.'],
+                eveningRoutine: ['Remova resíduos e higienize sem fricção.', currentRoutine === 'Rotina básica não informada' ? 'Use apenas os ativos orientados pela profissional.' : `Mantenha a rotina informada: ${currentRoutine}.`, 'Finalize com hidratação reparadora.'],
+                professionalTips: [plan.offer, 'Ao pré-agendar, nossa equipe pode orientar o melhor pacote e os produtos de home care para prolongar o resultado.', 'Não use ácidos ou ativos novos sem orientação profissional, especialmente em caso de sensibilidade.'],
+                spokenSummaryPrompt: `${summary} Para dar o próximo passo, clique em enviar diagnóstico e agende sua avaliação pelo WhatsApp.`
+            };
+        }
+
+        function renderAiDiagnosticResult(data) {
+            lastAiSpokenSummary = data.spokenSummaryPrompt || data.analysisSummary;
+            document.getElementById('ai-analysis-text').innerText = `"${data.analysisSummary}"`;
+
+            const clinicContainer = document.getElementById('ai-clinic-treatments');
+            clinicContainer.innerHTML = '';
+            data.recommendedClinicTreatments.forEach(t => {
+                clinicContainer.innerHTML += `
+                    <div class="p-3.5 bg-white rounded-xl border border-brand-pinkSoft shadow-sm">
+                        <div class="flex justify-between items-start">
+                            <h5 class="font-semibold text-xs text-brand-pinkDark">${t.name}</h5>
+                            <span class="text-[10px] bg-brand-pinkLight text-brand-pinkDark px-2 py-0.5 rounded-full font-medium">${t.recommendedFrequency}</span>
+                        </div>
+                        <p class="text-[11px] text-gray-600 mt-1 leading-normal">${t.reason}</p>
+                    </div>
+                `;
+            });
+
+            const morningList = document.getElementById('ai-morning-steps');
+            morningList.innerHTML = '';
+            data.morningRoutine.forEach((step, idx) => {
+                morningList.innerHTML += `<li class="flex items-start gap-1.5"><span class="font-bold text-amber-600">${idx+1}.</span> <span>${step}</span></li>`;
+            });
+
+            const eveningList = document.getElementById('ai-evening-steps');
+            eveningList.innerHTML = '';
+            data.eveningRoutine.forEach((step, idx) => {
+                eveningList.innerHTML += `<li class="flex items-start gap-1.5"><span class="font-bold text-indigo-500">${idx+1}.</span> <span>${step}</span></li>`;
+            });
+
+            const tipsBox = document.getElementById('ai-tips-box');
+            tipsBox.innerHTML = '<p class="font-semibold text-[11px] text-brand-charcoal mb-1"><i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i> Dicas de Especialista:</p>';
+            data.professionalTips.forEach(tip => {
+                tipsBox.innerHTML += `<p class="leading-relaxed">• ${tip}</p>`;
+            });
+
+            const whatsappText = `Olá Thays! Fiz o Diagnóstico por IA no site do Beauty Studio:\n- Tipo de Pele: ${document.getElementById('ai-skin-type').value}\n- Queixa: ${document.getElementById('ai-skin-concern').value}\n- Recomendados: ${data.recommendedClinicTreatments.map(x=>x.name).join(', ')}.\nGostaria de pré-agendar!`;
+            document.getElementById('ai-whatsapp-btn').href = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappText)}`;
+
+            document.getElementById('ai-diag-mode').classList.add('hidden');
+            document.getElementById('ai-diag-result').classList.remove('hidden');
+        }
+
+        function resetAiDiagnostic() {
+            document.getElementById('ai-diag-result').classList.add('hidden');
+            document.getElementById('ai-diag-mode').classList.remove('hidden');
+            if (currentAudioObject) {
+                currentAudioObject.pause();
+                currentAudioObject = null;
+            }
+            document.getElementById('tts-btn-text').innerText = "Ouvir Resumo de Thays Carneiro";
+            document.getElementById('tts-icon').className = "fa-solid fa-volume-high text-brand-pinkDark";
+        }
+
+        async function playAiAudioSummary() {
+            if (!lastAiSpokenSummary) return;
+
+            if (!apiKey && 'speechSynthesis' in window) {
+                const btnText = document.getElementById('tts-btn-text');
+                const icon = document.getElementById('tts-icon');
+                if (window.speechSynthesis.speaking) {
+                    window.speechSynthesis.cancel();
+                    btnText.innerText = "Ouvir Resumo de Thays Carneiro";
+                    icon.className = "fa-solid fa-volume-high text-brand-pinkDark";
+                    return;
+                }
+                const speech = new SpeechSynthesisUtterance(lastAiSpokenSummary);
+                speech.lang = 'pt-BR';
+                speech.rate = 0.95;
+                speech.pitch = 1;
+                speech.onend = speech.onerror = () => {
+                    btnText.innerText = "Ouvir Resumo de Thays Carneiro";
+                    icon.className = "fa-solid fa-volume-high text-brand-pinkDark";
+                };
+                btnText.innerText = "Pausar Áudio";
+                icon.className = "fa-solid fa-pause text-brand-pinkDark";
+                let hasStartedSpeech = false;
+                const speakWithMaria = () => {
+                    if (hasStartedSpeech) return;
+                    hasStartedSpeech = true;
+                    const availableVoices = window.speechSynthesis.getVoices();
+                    const mariaVoice = availableVoices.find(voice => /microsoft maria|maria.*portuguese|pt-br_maria/i.test(voice.name));
+                    const femininePortugueseVoice = availableVoices.find(voice => voice.lang.toLowerCase().startsWith('pt-br') && /francisca|maria|thalita|luciana|helena|female|feminina|woman/i.test(voice.name));
+                    if (mariaVoice || femininePortugueseVoice) speech.voice = mariaVoice || femininePortugueseVoice;
+                    window.speechSynthesis.speak(speech);
+                };
+                if (window.speechSynthesis.getVoices().length) {
+                    speakWithMaria();
+                } else {
+                    window.speechSynthesis.onvoiceschanged = speakWithMaria;
+                    window.setTimeout(speakWithMaria, 500);
+                }
+                return;
+            }
+
+            if (currentAudioObject && !currentAudioObject.paused) {
+                currentAudioObject.pause();
+                currentAudioObject = null;
+                document.getElementById('tts-btn-text').innerText = "Ouvir Resumo de Thays Carneiro";
+                document.getElementById('tts-icon').className = "fa-solid fa-volume-high text-brand-pinkDark";
+                return;
+            }
+
+            const btnText = document.getElementById('tts-btn-text');
+            const icon = document.getElementById('tts-icon');
+            btnText.innerText = "Gerando Áudio...";
+            icon.className = "fa-solid fa-circle-notch fa-spin text-brand-pinkDark";
+
+            const payload = {
+                contents: [{ parts: [{ text: `Fale calorosamente e profissionalmente: ${lastAiSpokenSummary}` }] }],
+                generationConfig: {
+                    responseModalities: ["AUDIO"],
+                    speechConfig: {
+                        voiceConfig: { prebuiltVoiceConfig: { voiceName: "Sulafat" } }
+                    }
+                }
+            };
+
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetchWithRetry(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const part = result?.candidates?.[0]?.content?.parts?.[0];
+                const audioData = part?.inlineData?.data;
+                const mimeType = part?.inlineData?.mimeType;
+
+                if (audioData && mimeType && mimeType.startsWith("audio/")) {
+                    const sampleRateMatch = mimeType.match(/rate=(\d+)/);
+                    const sampleRate = sampleRateMatch ? parseInt(sampleRateMatch[1], 10) : 24000;
+                    
+                    const pcmBuffer = base64ToArrayBuffer(audioData);
+                    const pcm16 = new Int16Array(pcmBuffer);
+                    const wavBlob = pcmToWav(pcm16, sampleRate);
+                    const audioUrl = URL.createObjectURL(wavBlob);
+
+                    currentAudioObject = new Audio(audioUrl);
+                    currentAudioObject.play();
+
+                    btnText.innerText = "Pausar Áudio";
+                    icon.className = "fa-solid fa-pause text-brand-pinkDark";
+
+                    currentAudioObject.onended = () => {
+                        btnText.innerText = "Ouvir Resumo de Thays Carneiro";
+                        icon.className = "fa-solid fa-volume-high text-brand-pinkDark";
+                    };
+                } else {
+                    showToast("Não foi possível gerar a voz no momento.");
+                    btnText.innerText = "Ouvir Resumo de Thays Carneiro";
+                    icon.className = "fa-solid fa-volume-high text-brand-pinkDark";
+                }
+            } catch (err) {
+                console.error("Erro no TTS:", err);
+                showToast("Erro ao gerar áudio.");
+                btnText.innerText = "Ouvir Resumo de Thays Carneiro";
+                icon.className = "fa-solid fa-volume-high text-brand-pinkDark";
+            }
+        }
+
+        function base64ToArrayBuffer(base64) {
+            const binaryString = window.atob(base64);
+            const len = binaryString.length;
+            const bytes = new Uint8Array(len);
+            for (let i = 0; i < len; i++) {
+                bytes[i] = binaryString.charCodeAt(i);
+            }
+            return bytes.buffer;
+        }
+
+        function pcmToWav(pcm16Array, sampleRate = 24000) {
+            const numChannels = 1;
+            const bytesPerSample = 2;
+            const blockAlign = numChannels * bytesPerSample;
+            const byteRate = sampleRate * blockAlign;
+            const dataSize = pcm16Array.length * bytesPerSample;
+            const buffer = new ArrayBuffer(44 + dataSize);
+            const view = new DataView(buffer);
+
+            writeString(view, 0, 'RIFF');
+            view.setUint32(4, 36 + dataSize, true);
+            writeString(view, 8, 'WAVE');
+            writeString(view, 12, 'fmt ');
+            view.setUint32(16, 16, true);
+            view.setUint16(20, 1, true);
+            view.setUint16(22, numChannels, true);
+            view.setUint32(24, sampleRate, true);
+            view.setUint32(28, byteRate, true);
+            view.setUint16(32, blockAlign, true);
+            view.setUint16(34, 16, true);
+            writeString(view, 36, 'data');
+            view.setUint32(40, dataSize, true);
+
+            let offset = 44;
+            for (let i = 0; i < pcm16Array.length; i++, offset += 2) {
+                view.setInt16(offset, pcm16Array[i], true);
+            }
+
+            return new Blob([buffer], { type: 'audio/wav' });
+        }
+
+        function writeString(view, offset, string) {
+            for (let i = 0; i < string.length; i++) {
+                view.setUint8(offset + i, string.charCodeAt(i));
+            }
+        }
+
+        // Floating AI Chat Logic
+        let aiChatHistory = [
+            { role: 'user', parts: [{ text: 'Apresente-se como assistente virtual do Thays Carneiro Beauty Studio e explique o que você sabe.' }] },
+            { role: 'model', parts: [{ text: 'Olá! Sou a assistente virtual de estética do Thays Carneiro Beauty Studio. ✨ Posso tirar suas dúvidas sobre nossos tratamentos, planos mensais, preços, formas de pagamento, cursos oferecidos e te orientar sobre as seções do site!' }] }
+        ];
+
+        function toggleAiChat() {
+            document.getElementById('ai-chat-window').classList.toggle('hidden');
+        }
+
+        function sendQuickQuestion(questionText) {
+            document.getElementById('ai-chat-input').value = questionText;
+            sendAiChatMessage();
+        }
+
+        async function sendAiChatMessage() {
+            const inputEl = document.getElementById('ai-chat-input');
+            const messageText = inputEl.value.trim();
+            if (!messageText) return;
+
+            inputEl.value = '';
+            const quickPills = document.getElementById('ai-quick-pills');
+            if (quickPills) quickPills.style.display = 'none';
+
+            const chatMessages = document.getElementById('ai-chat-messages');
+            chatMessages.innerHTML += `
+                <div class="flex items-start justify-end gap-2 max-w-[85%] ml-auto">
+                    <div class="bg-brand-pinkDark text-white p-3 rounded-2xl rounded-tr-none shadow-sm leading-relaxed">
+                        ${escapeHtml(messageText)}
+                    </div>
+                </div>
+            `;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            const loadingId = 'ai-loading-' + Date.now();
+            chatMessages.innerHTML += `
+                <div id="${loadingId}" class="flex items-start gap-2 max-w-[85%]">
+                    <div class="w-7 h-7 rounded-full bg-brand-pinkSoft text-brand-pinkDark flex items-center justify-center text-xs shrink-0 font-bold">TC</div>
+                    <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-brand-pinkSoft/60 text-gray-500 italic flex items-center gap-2">
+                        <i class="fa-solid fa-circle-notch fa-spin text-brand-pinkDark text-xs"></i> Consultando a base da clínica...
+                    </div>
+                </div>
+            `;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            aiChatHistory.push({ role: 'user', parts: [{ text: messageText }] });
+
+            if (!apiKey) {
+                window.setTimeout(() => {
+                    document.getElementById(loadingId)?.remove();
+                    const replyText = getNaturalAssistantReply(messageText);
+                    aiChatHistory.push({ role: 'model', parts: [{ text: replyText }] });
+                    appendAiReply(chatMessages, replyText);
+                }, 450);
+                return;
+            }
+
+            const fullSiteKnowledge = `Você é a Assistente Virtual Oficial do "Thays Carneiro Beauty Studio" (Estética Facial de Alta Performance).
+Você possui conhecimento completo sobre todas as seções e dados da página:
+
+1. ÂNCORAS / LINKS INTERNOS DO SITE:
+- Início / Apresentação: #inicio
+- Sobre Thays Carneiro: #sobre
+- Menu de Tratamentos: #servicos
+- Clube de Assinatura Mensal: #planos
+- Tabela de Preços Avulsos & Pacotes: #precos
+- Cursos de Estética Profissionais: #cursos
+- Diagnóstico com IA de Pele: #quiz
+- Depoimentos de Clientes: #depoimentos
+- Contato, Localização & Dúvidas: #contato
+
+2. PLANOS DE ASSINATURA MENSAL RECORRENTE (#planos):
+- Glow Essential: R$ 189,00/mês (1 Limpeza de Pele Profunda ou Peeling por mês + 10% desc em produtos + hidratação hidroplástica cortesia).
+- Prime Radiance VIP (Mais Vendido): R$ 320,00/mês (2 Tratamentos Faciais/mês + 15% desc adicionais + mapeamento com IA + kit amostras + horário prioritário aos sábados).
+- Diamond VIP: R$ 540,00/mês (3 Sessões/mês incluindo microagulhamento/laser + 20% desc geral + Lash/Brow trimestral + atendimento direto WhatsApp).
+
+3. PREÇOS SESSÕES AVULSAS E PACOTES ECONOMIA (#precos):
+- Limpeza de Pele Profunda: Avulso R$ 150,00 | Pacote 3 Sessões R$ 380,00.
+- Peeling Químico Otimizado: Avulso R$ 220,00 | Pacote 3 Sessões R$ 560,00.
+- Microagulhamento & Drug Delivery: Avulso R$ 350,00 | Pacote 3 Sessões R$ 890,00.
+- Drenagem & Massagem Sculpt Facial: Avulso R$ 130,00 | Pacote Leve 5 Pague 4 (R$ 520,00).
+- Brow Lamination & Lash Lifting: Avulso R$ 180,00 | Combo Duo R$ 310,00.
+- Harmonização Suave: Avaliação cortesia na aplicação | A partir de R$ 890,00/ml.
+
+4. MEIOS DE PAGAMENTO ACEITOS:
+- PIX com aprovação instantânea (QR Code e código copia e cola diretamente na tela).
+- Cartão de Crédito em até 6x sem juros (ou cobrança recorrente no caso dos planos).
+- Dinheiro e Débito no local.
+
+5. CURSOS DE ESTÉTICA OFERECIDOS (#cursos):
+- Masterclass Limpeza de Pele & Extração Indolor: R$ 890,00 ou 6x R$ 160,00 (1 dia / 8h, máximo 4 alunas, certificado + kit).
+- Especialização em Peeling Químico & Gerenciamento de Melasma: R$ 1.450,00 em até 10x (2 dias / 16h, individual VIP, cosmmetologia aplicada).
+- Formação Brow Lamination & Lash Lifting Expert: R$ 680,00 (1 dia prático em modelo real + kit inicial para 15 atendimentos).
+
+6. LOCALIZAÇÃO E CONTATO (#contato):
+- Endereço: Av. Paulista, 1500 - Sala 802, Bela Vista, São Paulo - SP.
+- Horário: Seg a Sex: 09h às 19h | Sáb: 09h às 14h.
+- WhatsApp Direct: (11) 99999-9999.
+
+Instruções de Resposta:
+- Seja sempre cortês, acolhedora, elegante e direta.
+- Ao citar uma seção do site, forneça o nome e sugira clicar nos botões ou navegação (ex: "Você pode conferir na seção Cursos (#cursos)...").
+- Máximo de 2 a 3 parágrafos objetivos. Use marcações em negrito para facilitar a leitura.`;
+
+            const payload = {
+                contents: aiChatHistory,
+                systemInstruction: { parts: [{ text: fullSiteKnowledge }] }
+            };
+
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+
+            try {
+                const response = await fetchWithRetry(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                const replyText = result?.candidates?.[0]?.content?.parts?.[0]?.text;
+
+                document.getElementById(loadingId)?.remove();
+
+                if (replyText) {
+                    aiChatHistory.push({ role: 'model', parts: [{ text: replyText }] });
+                    appendAiReply(chatMessages, replyText);
+                } else {
+                    appendAiReply(chatMessages, getNaturalAssistantReply(messageText));
+                }
+            } catch (err) {
+                console.error("Erro no chat:", err);
+                document.getElementById(loadingId)?.remove();
+                appendAiReply(chatMessages, getNaturalAssistantReply(messageText));
+            }
+
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function escapeHtml(str) {
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        }
+
+        function formatChatReply(text) {
+            let formatted = escapeHtml(text);
+            formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            formatted = formatted.replace(/\n/g, '<br>');
+            return formatted;
+        }
+
+        function appendAiReply(chatMessages, replyText) {
+            chatMessages.innerHTML += `
+                <div class="flex items-start gap-2 max-w-[85%] animate-fade-in">
+                    <div class="w-7 h-7 rounded-full bg-brand-pinkSoft text-brand-pinkDark flex items-center justify-center text-xs shrink-0 font-bold">TC</div>
+                    <div class="bg-white p-3 rounded-2xl rounded-tl-none border border-brand-pinkSoft/60 shadow-sm text-gray-700 leading-relaxed">
+                        ${formatChatReply(replyText)}
+                    </div>
+                </div>
+            `;
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function getNaturalAssistantReply(message) {
+            const text = message.toLocaleLowerCase('pt-BR').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+
+            if (/^(oi|ola|bom dia|boa tarde|boa noite)/.test(text)) return 'Olá! Que bom falar com você. ✨ Sou a **Thays IA**, assistente virtual do Beauty Studio. Posso ajudar a escolher um tratamento, explicar valores, planos, cursos ou orientar seu pré-agendamento.';
+            if (/plano|assinatura|mensal|clube/.test(text)) return 'Temos três planos mensais: **Glow Essential** por R$ 189/mês, **Prime Radiance VIP** por R$ 320/mês e **Diamond VIP** por R$ 540/mês. Cada um inclui uma combinação diferente de tratamentos e benefícios. Quer que eu compare os planos para o seu objetivo?';
+            if (/preco|valor|quanto custa|orcamento/.test(text)) return 'Claro! A **Limpeza de Pele** custa R$ 150, o **Peeling Químico** R$ 220 e o **Microagulhamento** R$ 350 por sessão. Também há pacotes com economia na seção **Preços & Pacotes**. Qual tratamento você gostaria de conhecer melhor?';
+            if (/pagamento|pix|cartao|credito|debito|parcel/.test(text)) return 'Você pode pagar por **PIX**, cartão de crédito em até **6x sem juros**, débito ou dinheiro. Nos planos de assinatura, a cobrança é recorrente e pode ser feita no cartão.';
+            if (/curso|formacao|masterclass/.test(text)) return 'Oferecemos a **Masterclass de Limpeza de Pele**, a especialização em **Peeling Químico & Melasma** e a formação **Brow Lamination & Lash Lifting Expert**. Posso indicar o curso mais adequado conforme sua experiência.';
+            if (/agend|horario|marcar|consulta/.test(text)) return 'Será um prazer ajudar com seu pré-agendamento. Você pode usar o botão **Pré-Agendamento** no topo da página e informar o tratamento e o melhor período para você. Nosso atendimento é de segunda a sexta, das 9h às 19h, e sábado, das 9h às 14h.';
+            if (/endereco|localizacao|onde fica|whatsapp|contato/.test(text)) return 'O Studio fica na **Av. Paulista, 1500 — Sala 802, Bela Vista, São Paulo**. Para falar diretamente com a equipe, o WhatsApp é **(11) 99999-9999**.';
+            if (/pele|mancha|acne|ruga|oleosa|sensivel|tratamento|limpeza|peeling|microagulhamento/.test(text)) return 'Cada pele merece uma avaliação cuidadosa. Para limpeza e poros, a **Limpeza de Pele Profunda** costuma ser uma ótima opção; para textura e manchas, o **Peeling Químico** pode ser indicado; e para estímulo de colágeno, há o **Microagulhamento**. A recomendação final deve ser feita pela profissional após avaliação. Quer me contar qual é seu principal objetivo?';
+            return 'Entendi! Posso ajudar com tratamentos faciais, planos, preços, formas de pagamento, cursos, localização ou pré-agendamento. Conte-me um pouco mais sobre o que você procura e eu vou orientar você da melhor forma. ✨';
+        }
+
+        // Quiz Interactive Logic
+        let quizAnswers = { goal: null, sensitivity: null };
+
+        function selectQuizOption(category, value, element) {
+            quizAnswers[category] = value;
+            const btnClass = category === 'goal' ? '.quiz-goal-btn' : '.quiz-sens-btn';
+            document.querySelectorAll(btnClass).forEach(btn => {
+                btn.classList.remove('border-brand-pinkDark', 'bg-brand-pinkLight/50', 'border-brand-slateAccent', 'bg-brand-bluishSoft');
+            });
+
+            if (category === 'goal') {
+                element.classList.add('border-brand-pinkDark', 'bg-brand-pinkLight/50');
+            } else {
+                element.classList.add('border-brand-slateAccent', 'bg-brand-bluishSoft');
+            }
+
+            const submitBtn = document.getElementById('quiz-submit');
+            if (quizAnswers.goal && quizAnswers.sensitivity) {
+                submitBtn.disabled = false;
+                submitBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+                submitBtn.classList.add('bg-brand-pinkDark', 'hover:bg-opacity-90', 'cursor-pointer');
+            }
+        }
+
+        function generateQuizResult() {
+            let recommended = "";
+            let description = "";
+
+            if (quizAnswers.goal === 'limpeza') {
+                recommended = "Limpeza de Pele Profunda Hidratante";
+                description = "Indicado para remover impurezas e renovar a pele sem causar vermelhidão nem desconforto.";
+            } else if (quizAnswers.goal === 'manchas') {
+                recommended = "Peeling Químico & Renovação Celular";
+                description = "Protocolo perfeito para clarear manchas e restaurar a luminosidade e tom uniforme da sua pele.";
+            } else {
+                recommended = "Microagulhamento & Drenagem Lifting";
+                description = "Tratamento focado na estimulação intensa de colágeno para firmeza, viço e jovialidade.";
+            }
+
+            document.getElementById('result-title').innerText = recommended;
+            document.getElementById('result-desc').innerText = description;
+            
+            const whatsappMsg = `Olá! Fiz o teste no site e meu tratamento recomendado foi: ${recommended}. Gostaria de agendar uma consulta!`;
+            document.getElementById('result-whatsapp-btn').href = `https://wa.me/5511999999999?text=${encodeURIComponent(whatsappMsg)}`;
+
+            document.getElementById('quiz-container').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+        }
+
+        function resetQuiz() {
+            quizAnswers = { goal: null, sensitivity: null };
+            document.querySelectorAll('.quiz-goal-btn, .quiz-sens-btn').forEach(btn => {
+                btn.classList.remove('border-brand-pinkDark', 'bg-brand-pinkLight/50', 'border-brand-slateAccent', 'bg-brand-bluishSoft');
+            });
+            const submitBtn = document.getElementById('quiz-submit');
+            submitBtn.disabled = true;
+            submitBtn.classList.add('bg-gray-300', 'cursor-not-allowed');
+            submitBtn.classList.remove('bg-brand-pinkDark', 'hover:bg-opacity-90', 'cursor-pointer');
+
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-container').classList.remove('hidden');
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast-message');
+            document.getElementById('toast-text').innerText = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => { toast.classList.add('hidden'); }, 4000);
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast("Mensagem enviada com sucesso! Responderemos em breve.");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>

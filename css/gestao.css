@@ -1,0 +1,15 @@
+body { background: #f8fafc; }
+
+.card {
+    background: white;
+    border: 1px solid #f1e5e8;
+    box-shadow: 0 10px 30px rgba(45, 55, 72, .05);
+}
+
+.metric-icon { width: 46px; height: 46px; }
+
+.bar {
+    background: linear-gradient(180deg, #e8a5b8, #c9738a);
+    min-width: 24px;
+    border-radius: 8px 8px 3px 3px;
+}

@@ -1,0 +1,28 @@
+body { background: #f8fafc; }
+
+.card {
+    background: white;
+    border: 1px solid #f1e5e8;
+    box-shadow: 0 10px 30px rgba(45, 55, 72, .05);
+}
+
+.field {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: .75rem;
+    padding: .72rem .85rem;
+    font-size: .875rem;
+    outline: none;
+    transition: .2s;
+}
+
+.field:focus {
+    border-color: #C9738A;
+    box-shadow: 0 0 0 3px #F8E1E7;
+}
+
+.check {
+    accent-color: #C9738A;
+    width: 1rem;
+    height: 1rem;
+}

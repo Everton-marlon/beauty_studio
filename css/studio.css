@@ -1,0 +1,16 @@
+.glass-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(248, 225, 231, 0.6);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #C9738A 0%, #819BB0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #FDF0F4 0%, #F4F7F9 50%, #F8E1E7 100%);
+}

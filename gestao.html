@@ -1,0 +1,71 @@
+gue <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão | Thays Carneiro Beauty Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { pink: '#C9738A', blush: '#FDF0F4', soft: '#F8E1E7', ink: '#2D3748', slate: '#819BB0' } }, fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Montserrat', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="css/gestao.css">
+</head>
+<body class="font-sans text-brand-ink antialiased">
+    <header class="sticky top-0 z-20 border-b border-brand-soft bg-white/95 backdrop-blur">
+        <div class="max-w-7xl mx-auto min-h-[76px] px-4 sm:px-6 flex items-center justify-between gap-4">
+            <a href="thays_carneiro_beauty_studio.html" class="flex items-center gap-3 group" aria-label="Voltar ao site">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#E2B2A3] to-brand-pink p-0.5"><div class="w-full h-full bg-white rounded-full grid place-items-center font-serif font-bold text-brand-pink text-xl">TC</div></div>
+                <div><p class="font-semibold text-sm tracking-[.16em] leading-none">THAYS CARNEIRO</p><p class="mt-1 text-[10px] tracking-[.2em] text-brand-pink">BEAUTY STUDIO</p></div>
+            </a>
+            <div class="flex items-center gap-2 sm:gap-4">
+                <span class="hidden sm:inline-flex items-center gap-2 text-xs text-slate-500"><span class="w-2 h-2 rounded-full bg-emerald-500"></span>Dados atualizados agora</span>
+                <a href="thays_carneiro_beauty_studio.html" class="rounded-full border border-brand-soft px-3 sm:px-4 py-2 text-xs font-semibold text-brand-pink hover:bg-brand-blush transition-colors"><i class="fa-solid fa-arrow-left mr-1.5"></i><span class="hidden sm:inline">Voltar ao site</span><span class="sm:hidden">Voltar</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <section class="flex flex-col lg:flex-row lg:items-end justify-between gap-5 mb-8">
+            <div>
+                <p class="text-xs font-bold tracking-[.2em] text-brand-pink uppercase">Painel administrativo</p>
+                <h1 class="font-serif text-4xl sm:text-5xl font-semibold mt-1">Visão geral da gestão</h1>
+                <p class="text-sm text-slate-500 mt-2">Acompanhe o desempenho do Beauty Studio em outubro de 2026.</p>
+            </div>
+            <button onclick="alert('Relatório mensal preparado para exportação. Conecte este painel ao seu sistema financeiro para gerar um arquivo real.')" class="bg-brand-ink text-white rounded-full px-5 py-3 text-xs font-semibold hover:bg-slate-700 transition-colors"><i class="fa-solid fa-file-arrow-down mr-2"></i>Exportar relatório</button>
+        </section>
+
+        <section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+            <article class="card rounded-2xl p-5"><div class="flex justify-between gap-3"><div><p class="text-xs font-semibold text-slate-500">Faturamento do mês</p><p class="font-serif text-3xl font-bold mt-2">R$ 48.760</p><p class="text-xs text-emerald-600 mt-2"><i class="fa-solid fa-arrow-trend-up mr-1"></i>12,8% vs. mês anterior</p></div><div class="metric-icon rounded-xl bg-brand-blush text-brand-pink grid place-items-center"><i class="fa-solid fa-wallet"></i></div></div></article>
+            <article class="card rounded-2xl p-5"><div class="flex justify-between gap-3"><div><p class="text-xs font-semibold text-slate-500">Despesas do mês</p><p class="font-serif text-3xl font-bold mt-2">R$ 16.420</p><p class="text-xs text-slate-500 mt-2">33,7% do faturamento</p></div><div class="metric-icon rounded-xl bg-orange-50 text-orange-500 grid place-items-center"><i class="fa-solid fa-receipt"></i></div></div></article>
+            <article class="card rounded-2xl p-5"><div class="flex justify-between gap-3"><div><p class="text-xs font-semibold text-slate-500">Lucro operacional</p><p class="font-serif text-3xl font-bold mt-2">R$ 32.340</p><p class="text-xs text-emerald-600 mt-2"><i class="fa-solid fa-arrow-trend-up mr-1"></i>Margem de 66,3%</p></div><div class="metric-icon rounded-xl bg-emerald-50 text-emerald-600 grid place-items-center"><i class="fa-solid fa-chart-pie"></i></div></div></article>
+            <article class="card rounded-2xl p-5"><div class="flex justify-between gap-3"><div><p class="text-xs font-semibold text-slate-500">Atendimentos realizados</p><p class="font-serif text-3xl font-bold mt-2">186</p><p class="text-xs text-brand-slate mt-2">Ticket médio: R$ 262,15</p></div><div class="metric-icon rounded-xl bg-sky-50 text-brand-slate grid place-items-center"><i class="fa-solid fa-calendar-check"></i></div></div></article>
+        </section>
+
+        <section class="grid lg:grid-cols-3 gap-5 mb-8">
+            <article class="card rounded-2xl p-5 lg:col-span-2">
+                <div class="flex items-center justify-between"><div><h2 class="font-serif text-2xl font-bold">Faturamento semanal</h2><p class="text-xs text-slate-500 mt-1">Receitas confirmadas no período</p></div><span class="rounded-full bg-brand-blush px-3 py-1 text-[11px] font-semibold text-brand-pink">Outubro</span></div>
+                <div class="h-56 mt-7 flex items-end justify-between gap-3 sm:gap-6 px-1 border-b border-slate-100">
+                    <div class="h-[46%] bar flex-1" title="Semana 1: R$ 8.940"></div><div class="h-[68%] bar flex-1" title="Semana 2: R$ 13.260"></div><div class="h-[57%] bar flex-1" title="Semana 3: R$ 11.120"></div><div class="h-[88%] bar flex-1" title="Semana 4: R$ 15.440"></div>
+                </div>
+                <div class="grid grid-cols-4 text-center text-[11px] text-slate-500 mt-3"><span>Sem. 1<br><b class="text-brand-ink">R$ 8,9k</b></span><span>Sem. 2<br><b class="text-brand-ink">R$ 13,3k</b></span><span>Sem. 3<br><b class="text-brand-ink">R$ 11,1k</b></span><span>Sem. 4<br><b class="text-brand-ink">R$ 15,4k</b></span></div>
+            </article>
+            <article class="card rounded-2xl p-5"><h2 class="font-serif text-2xl font-bold">Composição de despesas</h2><p class="text-xs text-slate-500 mt-1 mb-5">Total: R$ 16.420</p><div class="space-y-4"><div><div class="flex justify-between text-xs mb-1.5"><span>Produtos e insumos</span><b>R$ 6.580</b></div><div class="h-2 rounded-full bg-brand-blush"><div class="h-2 rounded-full bg-brand-pink w-[40%]"></div></div></div><div><div class="flex justify-between text-xs mb-1.5"><span>Equipe</span><b>R$ 5.250</b></div><div class="h-2 rounded-full bg-brand-blush"><div class="h-2 rounded-full bg-brand-slate w-[32%]"></div></div></div><div><div class="flex justify-between text-xs mb-1.5"><span>Operação</span><b>R$ 4.590</b></div><div class="h-2 rounded-full bg-brand-blush"><div class="h-2 rounded-full bg-slate-400 w-[28%]"></div></div></div></div></article>
+        </section>
+
+        <section class="grid lg:grid-cols-2 gap-5 mb-8">
+            <article class="card rounded-2xl p-5"><div class="flex items-start justify-between"><div><p class="text-xs font-bold tracking-[.15em] text-brand-pink uppercase">Base de clientes</p><h2 class="font-serif text-2xl font-bold mt-1">Clientes ativos</h2></div><i class="fa-solid fa-users text-brand-pink text-xl"></i></div><div class="grid grid-cols-2 gap-4 mt-6"><div class="rounded-xl bg-brand-blush p-4"><p class="text-3xl font-serif font-bold">328</p><p class="text-xs text-slate-600 mt-1">Assinantes</p><p class="text-[11px] text-emerald-600 mt-2">+18 neste mês</p></div><div class="rounded-xl bg-slate-50 p-4"><p class="text-3xl font-serif font-bold">1.147</p><p class="text-xs text-slate-600 mt-1">Não assinantes</p><p class="text-[11px] text-brand-slate mt-2">63 atendidos no mês</p></div></div><div class="mt-5 pt-4 border-t border-slate-100 flex justify-between text-xs"><span class="text-slate-500">Taxa de assinatura</span><b class="text-brand-pink">22,2% da base total</b></div></article>
+            <article class="card rounded-2xl p-5"><div class="flex items-start justify-between"><div><p class="text-xs font-bold tracking-[.15em] text-brand-pink uppercase">Assinaturas</p><h2 class="font-serif text-2xl font-bold mt-1">Receita recorrente</h2></div><i class="fa-solid fa-arrows-rotate text-brand-pink text-xl"></i></div><p class="font-serif text-4xl font-bold mt-6">R$ 18.942<span class="text-lg font-sans font-medium text-slate-400">/mês</span></p><div class="mt-5 space-y-3 text-xs"><div class="flex justify-between"><span class="text-slate-500">Plano Essencial</span><b>172 clientes · R$ 10.148</b></div><div class="flex justify-between"><span class="text-slate-500">Plano Premium</span><b>108 clientes · R$ 6.912</b></div><div class="flex justify-between"><span class="text-slate-500">Plano VIP</span><b>48 clientes · R$ 1.882</b></div></div></article>
+        </section>
+
+        <section class="grid lg:grid-cols-5 gap-5">
+            <article class="card rounded-2xl p-5 lg:col-span-3"><div class="flex items-center justify-between mb-5"><div><h2 class="font-serif text-2xl font-bold">Estoque de produtos</h2><p class="text-xs text-slate-500 mt-1">Produtos que precisam de atenção aparecem primeiro.</p></div><button class="text-xs font-semibold text-brand-pink hover:underline" onclick="alert('A gestão de estoque pode ser conectada ao seu sistema de vendas para atualização automática.')">Gerenciar estoque</button></div><div class="overflow-x-auto"><table class="min-w-full text-left text-xs"><thead class="text-slate-400 border-b border-slate-100"><tr><th class="pb-3 font-semibold">Produto</th><th class="pb-3 font-semibold">Em estoque</th><th class="pb-3 font-semibold">Mínimo</th><th class="pb-3 font-semibold">Status</th></tr></thead><tbody class="divide-y divide-slate-100"><tr><td class="py-3 font-semibold">Sérum Vitamina C 30ml</td><td>8 un.</td><td>12 un.</td><td><span class="bg-red-50 text-red-600 rounded-full px-2 py-1 font-semibold">Reposição</span></td></tr><tr><td class="py-3 font-semibold">Máscara Calmante</td><td>14 un.</td><td>10 un.</td><td><span class="bg-amber-50 text-amber-600 rounded-full px-2 py-1 font-semibold">Atenção</span></td></tr><tr><td class="py-3 font-semibold">Ácido Hialurônico</td><td>23 un.</td><td>8 un.</td><td><span class="bg-emerald-50 text-emerald-600 rounded-full px-2 py-1 font-semibold">Adequado</span></td></tr><tr><td class="py-3 font-semibold">Protetor Solar FPS 50</td><td>31 un.</td><td>15 un.</td><td><span class="bg-emerald-50 text-emerald-600 rounded-full px-2 py-1 font-semibold">Adequado</span></td></tr></tbody></table></div></article>
+            <article class="card rounded-2xl p-5 lg:col-span-2"><h2 class="font-serif text-2xl font-bold">Alertas do dia</h2><div class="mt-5 space-y-4 text-xs"><div class="flex gap-3"><span class="w-8 h-8 shrink-0 grid place-items-center rounded-full bg-red-50 text-red-500"><i class="fa-solid fa-box"></i></span><p><b>Reposição necessária</b><br><span class="text-slate-500">Sérum Vitamina C está abaixo do nível mínimo.</span></p></div><div class="flex gap-3"><span class="w-8 h-8 shrink-0 grid place-items-center rounded-full bg-brand-blush text-brand-pink"><i class="fa-solid fa-user-plus"></i></span><p><b>18 novas assinaturas</b><br><span class="text-slate-500">Crescimento de 5,8% na receita recorrente.</span></p></div><div class="flex gap-3"><span class="w-8 h-8 shrink-0 grid place-items-center rounded-full bg-sky-50 text-brand-slate"><i class="fa-solid fa-calendar"></i></span><p><b>12 atendimentos amanhã</b><br><span class="text-slate-500">3 horários ainda estão disponíveis.</span></p></div></div></article>
+        </section>
+        <p class="text-center text-[11px] text-slate-400 mt-8">Dados demonstrativos — conecte este painel ao seu sistema de agenda, pagamentos e estoque para dados em tempo real.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Cliente | Thays Carneiro Beauty Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { brand: { pink: '#C9738A', blush: '#FDF0F4', soft: '#F8E1E7', ink: '#2D3748', slate: '#819BB0' } }, fontFamily: { serif: ['Cormorant Garamond', 'serif'], sans: ['Montserrat', 'sans-serif'] } } } }
+    </script>
+    <link rel="stylesheet" href="css/portal-cliente.css">
+</head>
+<body class="font-sans text-brand-ink antialiased">
+    <header class="border-b border-brand-soft bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 min-h-[76px] flex items-center justify-between gap-4">
+            <a href="thays_carneiro_beauty_studio.html" class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-gradient-to-tr from-[#E2B2A3] to-brand-pink p-0.5"><div class="w-full h-full bg-white rounded-full grid place-items-center font-serif font-bold text-brand-pink text-xl">TC</div></div><div><p class="font-semibold text-sm tracking-[.16em] leading-none">THAYS CARNEIRO</p><p class="mt-1 text-[10px] tracking-[.2em] text-brand-pink">BEAUTY STUDIO</p></div></a>
+            <a href="thays_carneiro_beauty_studio.html" class="rounded-full border border-brand-soft px-4 py-2 text-xs font-semibold text-brand-pink hover:bg-brand-blush"><i class="fa-solid fa-arrow-left mr-1.5"></i>Voltar ao site</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <section id="login-screen" class="max-w-md mx-auto py-4 sm:py-10">
+            <div class="card rounded-3xl p-6 sm:p-9">
+                <div class="w-14 h-14 rounded-2xl bg-brand-blush text-brand-pink grid place-items-center text-xl mb-6"><i class="fa-solid fa-heart"></i></div>
+                <p class="text-xs font-bold tracking-[.18em] text-brand-pink uppercase">Área exclusiva</p>
+                <h1 class="font-serif text-4xl font-bold mt-1">Portal do Cliente</h1>
+                <p class="text-sm text-slate-500 mt-3 leading-relaxed">Consulte seus cuidados, horários e histórico em um só lugar.</p>
+                <form id="login-form" class="mt-7 space-y-4">
+                    <div><label for="email" class="block text-xs font-semibold mb-1.5">E-mail</label><input id="email" type="email" required placeholder="seuemail@exemplo.com" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-brand-pink focus:ring-2 focus:ring-brand-soft"></div>
+                    <div><label for="password" class="block text-xs font-semibold mb-1.5">Senha</label><input id="password" type="password" required placeholder="Digite sua senha" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-brand-pink focus:ring-2 focus:ring-brand-soft"></div>
+                    <p id="login-error" class="hidden text-xs text-red-600"><i class="fa-solid fa-circle-exclamation mr-1"></i>Preencha e-mail e senha para acessar a demonstração.</p>
+                    <button type="submit" class="w-full rounded-xl bg-brand-pink py-3.5 text-sm font-semibold text-white shadow-md hover:opacity-90"><i class="fa-solid fa-right-to-bracket mr-2"></i>Entrar no portal</button>
+                </form>
+                <div class="mt-5 rounded-xl bg-brand-blush p-3 text-[11px] leading-relaxed text-slate-600"><b class="text-brand-pink">Login demonstrativo:</b> use qualquer e-mail e senha com pelo menos um caractere. Em produção, conecte este formulário a um sistema seguro de clientes.</div>
+            </div>
+        </section>
+
+        <section id="portal-screen" class="hidden">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-8"><div><p class="text-xs font-bold tracking-[.18em] text-brand-pink uppercase">Minha área</p><h1 class="font-serif text-4xl sm:text-5xl font-bold mt-1">Olá, Marina!</h1><p class="text-sm text-slate-500 mt-2">Que bom ter você de volta. Aqui está um resumo dos seus cuidados.</p></div><button id="logout" class="rounded-full border border-brand-soft px-4 py-2.5 text-xs font-semibold text-brand-pink hover:bg-brand-blush"><i class="fa-solid fa-arrow-right-from-bracket mr-1.5"></i>Sair</button></div>
+            <section class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4 mb-8">
+                <article class="card rounded-2xl p-5"><p class="text-xs text-slate-500">Próximo horário</p><p class="font-serif text-2xl font-bold mt-2">16 Out · 14:30</p><p class="text-xs text-brand-pink mt-2">Limpeza de Pele Profunda</p></article>
+                <article class="card rounded-2xl p-5"><p class="text-xs text-slate-500">Plano atual</p><p class="font-serif text-2xl font-bold mt-2">Clube Premium</p><p class="text-xs text-emerald-600 mt-2"><i class="fa-solid fa-circle-check mr-1"></i>Ativo até 16 Nov</p></article>
+                <article class="card rounded-2xl p-5"><p class="text-xs text-slate-500">Procedimentos realizados</p><p class="font-serif text-2xl font-bold mt-2">7</p><p class="text-xs text-slate-500 mt-2">nos últimos 12 meses</p></article>
+                <article class="card rounded-2xl p-5"><p class="text-xs text-slate-500">Benefícios disponíveis</p><p class="font-serif text-2xl font-bold mt-2">2</p><p class="text-xs text-brand-slate mt-2">para usar neste mês</p></article>
+            </section>
+
+            <section class="grid lg:grid-cols-3 gap-5 mb-8">
+                <article class="card rounded-2xl p-5 lg:col-span-2"><div class="flex items-center justify-between"><div><h2 class="font-serif text-2xl font-bold">Pré-agendamentos</h2><p class="text-xs text-slate-500 mt-1">Seus próximos cuidados no Studio.</p></div><button onclick="alert('Para solicitar um novo horário, fale com nossa equipe pelo WhatsApp.')" class="rounded-full bg-brand-pink px-3 py-2 text-[11px] font-semibold text-white"><i class="fa-solid fa-plus mr-1"></i>Novo</button></div><div class="mt-5 divide-y divide-slate-100"><div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div class="flex gap-3"><div class="w-10 h-10 rounded-xl bg-brand-blush text-brand-pink grid place-items-center"><i class="fa-regular fa-calendar"></i></div><div><p class="text-sm font-semibold">Limpeza de Pele Profunda</p><p class="text-xs text-slate-500 mt-1">16 de outubro · 14:30 · 60 min</p></div></div><span class="self-start sm:self-auto rounded-full bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-700">Aguardando confirmação</span></div><div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div class="flex gap-3"><div class="w-10 h-10 rounded-xl bg-brand-blush text-brand-pink grid place-items-center"><i class="fa-regular fa-calendar"></i></div><div><p class="text-sm font-semibold">Brow Lamination & Lash Lifting</p><p class="text-xs text-slate-500 mt-1">28 de outubro · 10:00 · 75 min</p></div></div><span class="self-start sm:self-auto rounded-full bg-sky-50 px-2.5 py-1 text-[11px] font-semibold text-brand-slate">Confirmado</span></div></div></article>
+                <article class="card rounded-2xl p-5"><h2 class="font-serif text-2xl font-bold">Seus benefícios</h2><div class="mt-5 space-y-4 text-xs"><div class="rounded-xl bg-brand-blush p-4"><p class="font-semibold">10% em dermocosméticos</p><p class="text-slate-500 mt-1">Válido até 31 de outubro.</p></div><div class="rounded-xl bg-slate-50 p-4"><p class="font-semibold">Avaliação de pele</p><p class="text-slate-500 mt-1">1 sessão disponível no seu plano.</p></div><a href="thays_carneiro_beauty_studio.html#planos" class="block text-center font-semibold text-brand-pink hover:underline">Ver planos e benefícios</a></div></article>
+            </section>
+
+            <section class="grid lg:grid-cols-2 gap-5 mb-8">
+                <article class="card rounded-2xl p-5"><div class="flex justify-between items-center"><div><h2 class="font-serif text-2xl font-bold">Histórico de pagamentos</h2><p class="text-xs text-slate-500 mt-1">Cobranças e pagamentos recentes.</p></div><i class="fa-solid fa-receipt text-brand-pink"></i></div><div class="mt-5 overflow-x-auto"><table class="w-full min-w-[430px] text-left text-xs"><thead class="border-b border-slate-100 text-slate-400"><tr><th class="pb-3">Data</th><th class="pb-3">Descrição</th><th class="pb-3">Valor</th><th class="pb-3">Status</th></tr></thead><tbody class="divide-y divide-slate-100"><tr><td class="py-3">03 Out 2026</td><td>Clube Premium</td><td>R$ 179,00</td><td><span class="text-emerald-600 font-semibold">Pago</span></td></tr><tr><td class="py-3">18 Set 2026</td><td>Peeling Químico</td><td>R$ 320,00</td><td><span class="text-emerald-600 font-semibold">Pago</span></td></tr><tr><td class="py-3">03 Set 2026</td><td>Clube Premium</td><td>R$ 179,00</td><td><span class="text-emerald-600 font-semibold">Pago</span></td></tr></tbody></table></div></article>
+                <article class="card rounded-2xl p-5"><div class="flex justify-between items-center"><div><h2 class="font-serif text-2xl font-bold">Procedimentos realizados</h2><p class="text-xs text-slate-500 mt-1">Seu histórico de autocuidado.</p></div><i class="fa-solid fa-spa text-brand-pink"></i></div><div class="mt-5 space-y-4"><div class="flex justify-between gap-4 border-b border-slate-100 pb-3 text-xs"><div><p class="font-semibold">Peeling Químico Otimizado</p><p class="text-slate-500 mt-1">18 de setembro de 2026</p></div><span class="text-brand-pink font-semibold">Concluído</span></div><div class="flex justify-between gap-4 border-b border-slate-100 pb-3 text-xs"><div><p class="font-semibold">Limpeza de Pele Profunda</p><p class="text-slate-500 mt-1">21 de agosto de 2026</p></div><span class="text-brand-pink font-semibold">Concluído</span></div><div class="flex justify-between gap-4 text-xs"><div><p class="font-semibold">Brow Lamination & Lash Lifting</p><p class="text-slate-500 mt-1">12 de julho de 2026</p></div><span class="text-brand-pink font-semibold">Concluído</span></div></div></article>
+            </section>
+
+            <section class="card rounded-2xl p-5 sm:p-7"><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4"><div><p class="text-xs font-bold tracking-[.15em] text-brand-pink uppercase">Conheça o Studio</p><h2 class="font-serif text-3xl font-bold mt-1">Serviços disponíveis para você</h2></div><a href="thays_carneiro_beauty_studio.html#servicos" class="text-xs font-semibold text-brand-pink hover:underline">Ver todos os tratamentos <i class="fa-solid fa-arrow-right ml-1"></i></a></div><div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-3 mt-5"><div class="rounded-xl bg-brand-blush p-4"><i class="fa-solid fa-sparkles text-brand-pink"></i><p class="font-semibold text-sm mt-3">Limpeza de Pele</p><p class="text-xs text-slate-500 mt-1">Renovação e equilíbrio.</p></div><div class="rounded-xl bg-brand-blush p-4"><i class="fa-solid fa-droplet text-brand-pink"></i><p class="font-semibold text-sm mt-3">Peeling Químico</p><p class="text-xs text-slate-500 mt-1">Uniformidade e viço.</p></div><div class="rounded-xl bg-brand-blush p-4"><i class="fa-solid fa-wand-magic-sparkles text-brand-pink"></i><p class="font-semibold text-sm mt-3">Harmonização Suave</p><p class="text-xs text-slate-500 mt-1">Contorno natural.</p></div><div class="rounded-xl bg-brand-blush p-4"><i class="fa-solid fa-hand-sparkles text-brand-pink"></i><p class="font-semibold text-sm mt-3">Drenagem & Sculpt</p><p class="text-xs text-slate-500 mt-1">Bem-estar e relaxamento.</p></div><div class="rounded-xl bg-brand-blush p-4"><i class="fa-solid fa-eye text-brand-pink"></i><p class="font-semibold text-sm mt-3">Brow & Lash Lifting</p><p class="text-xs text-slate-500 mt-1">Olhar em destaque.</p></div><div class="rounded-xl bg-brand-blush p-4"><i class="fa-solid fa-gem text-brand-pink"></i><p class="font-semibold text-sm mt-3">Clube de Assinatura</p><p class="text-xs text-slate-500 mt-1">Cuidados recorrentes.</p></div></div></section>
+        </section>
+    </main>
+    <script>
+        const loginScreen = document.getElementById('login-screen');
+        const portalScreen = document.getElementById('portal-screen');
+        document.getElementById('login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('password').value.trim();
+            if (!email || !password) { document.getElementById('login-error').classList.remove('hidden'); return; }
+            loginScreen.classList.add('hidden'); portalScreen.classList.remove('hidden');
+        });
+        document.getElementById('logout').addEventListener('click', function () {
+            portalScreen.classList.add('hidden'); loginScreen.classList.remove('hidden'); document.getElementById('login-form').reset();
+        });
+    </script>
+</body>
+</html>
